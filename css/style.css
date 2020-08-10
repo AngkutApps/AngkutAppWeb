@@ -170,6 +170,10 @@ body {
   transform: rotate(180deg);
 }
 
+section.brands{
+  padding:25px;
+}
+
 .footer {
   background-color: #16a085;
 }
@@ -311,10 +315,6 @@ body {
 }
 
 /* halaman utama */
-header .jumbotron{
-  background: var(--green);
-  
-}
 
 section.layanan{
   margin-top:20px;
