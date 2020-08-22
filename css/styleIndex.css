@@ -53,6 +53,7 @@ nav.navbar {
 .nav-link {
   color: white !important;
   font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 button.navbar-toggler {
@@ -106,7 +107,6 @@ button.navbar-toggler {
 /* layanan */
 section.layanan h1 {
   color: var(--green);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 section.layanan hr {
@@ -135,7 +135,6 @@ section.layanan p {
 
 section.pilar-angkut h1 {
   color: var(--green);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 section.pilar-angkut hr {
@@ -169,11 +168,10 @@ section.testimonial {
 
 section.testimonial h1 {
   color: var(--green);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 section.testimonial hr {
-  width: 45%;
+  width: 15%;
   margin: 15px auto;
   border: 1px solid var(--green);
   opacity: 0.8;

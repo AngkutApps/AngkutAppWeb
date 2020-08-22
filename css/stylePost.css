@@ -68,40 +68,57 @@ button.navbar-toggler {
 }
 
 /* header */
-.jumbotron {
-    margin-top: 9rem;
-    background: white;
+.jumbotron.jumbotron-fluid {
+    margin-top: 15%;
+    background: transparent;
 }
 
-.jumbotron p {
-    font-size: 2.5rem;
+.kategori .link-kategori {
+    color: rgba(0, 0, 0, .8);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.kategori .link-kategori:hover {
     color: var(--green);
 }
 
-.jumbotron .form-group {
-    margin: .5rem auto;
-    background-color: #e9eceb;
-    border-radius: 10px;
+.kategori .link-kategori:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--green);
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+.form-group {
+    margin-top: 2.5rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 1rem;
 }
 
 .form-group .form-input::-webkit-input-placeholder {
-    color: var(--green);
+    color: rgba(0, 0, 0, .6)
 }
 
 .form-group .form-input:-moz-input-placeholder {
-    color: var(--green);
+    6 color: rgba(0, 0, 0, .6)
 }
 
 .form-group .form-input {
     padding: 6.7px;
     width: 25rem;
     font-size: 1.6rem;
-    color: var(--green);
+    color: rgba(0, 0, 0, .6);
     border-radius: 10px;
     background: unset;
     border: unset;
     outline: unset;
     padding-left: 2rem;
+    font-weight: 600;
 }
 
 .form-group .search-btn {
@@ -122,65 +139,99 @@ button.navbar-toggler {
     color: darkgreen;
 }
 
-/* content */
-.content {
-    margin-top: -20px;
+/* main */
+main .card-wrapper {
+    margin-bottom: 2rem;
 }
 
-.content h2 {
-    margin-left: 5rem;
-    font-size: 1.8rem;
-    color: var(--green);
-    font-weight: 600;
+main .card-wrapper img {
+    width: 100%;
+    border-radius: 1.2rem 1.2rem 0 0;
 }
 
-.content h2.text-isu {
-    margin-left: 0rem;
-    font-size: 1.8rem;
-    color: var(--green);
-    font-weight: 600;
+main .card-wrapper a {
+    font-size: 1.9rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .7);
+    font-weight: 700;
 }
 
-.content .isu {
-    border-left: 1px solid var(--green);
-    height: 100%;
+
+main .card {
+    border: unset;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
 }
 
-.content .isuLainnya p {
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 15px;
-    padding-left: 2rem;
-    margin-bottom: 1.7rem;
+main .card img {
+    width: 50%;
+    border-radius: .5rem;
 }
 
-/*faq penumpang - accordion */
-section.faq-penumpang {
-    background: #16a0841a;
-}
-
-section.faq-penumpang h1 {
-    margin-bottom: 3rem;
-}
-
-#accordion {
-    width: 60%;
-}
-
-.card {
-    padding-bottom: 2rem;
-}
-
-.card p {
+.card .card-body a {
     font-size: 1.3rem;
-    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    top: 4rem;
+    color: rgba(0, 0, 0, .7);
+    font-weight: 500;
 }
 
-.card-header .card-link {
+.card .card-footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.card .text-muted {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1rem;
+}
+
+.card-wrapper .card-footer {
+    border-top: unset;
+    text-align: right;
+}
+
+.card-wrapper .text-muted {
     font-size: 1.3rem;
-    color: rgba(0, 0, 0, 0.7);
 }
 
-/* faq driver */
+.pagination {
+    padding-top: 5rem;
+}
+
+.page-item {
+    padding: 2rem;
+}
+
+.page-link.prev,
+.page-link.next {
+    background-color: var(--green) !important;
+    color: white;
+    border-radius: 10%;
+    font-size: 1.8rem;
+}
+
+.page-link.prev:hover,
+.page-link.next:hover {
+    background-color: #106d5a !important;
+    transition: 0.5s;
+}
+
+.page-link {
+    border: unset !important;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, .7);
+    font-weight: 700;
+}
+
 
 /* footer */
 .footer {
@@ -266,15 +317,9 @@ section.faq-penumpang h1 {
     color: rgb(211, 211, 211);
 }
 
-
 @media (min-width: 992px) {
-    nav.navbar {
-        background: var(--green);
-    }
-
     .nav-link {
         margin-right: 30px;
-        text-transform: uppercase;
         font-size: 1.4rem;
         color: white !important;
     }
@@ -290,48 +335,75 @@ section.faq-penumpang h1 {
     }
 
     /* header */
-    .jumbotron p {
-        font-size: 3rem;
+    .jumbotron.jumbotron-fluid {
+        margin-top: 5%;
     }
 
-    .jumbotron .form-group {
-        margin: 0 auto;
+    .kategori .link-kategori {
+        font-size: 1.7rem;
     }
 
     .form-group .form-input {
-        font-size: 1.8rem;
-        width: 30rem;
+        width: 52rem;
     }
 
-    /* content */
-    .content {
-        margin-left: 20rem;
+
+    /* main */
+    main.wrapper {
+        padding-bottom: 8rem;
     }
 
-    .content .card {
-        border-radius: 1.2rem;
+    main .card {
+        display: unset;
     }
 
-    .content h2 {
-        font-size: 2.2rem;
+    main .card img {
+        width: 100%;
+        border-radius: 1.2rem 1.2rem 0 0;
     }
 
-    .content h2.text-isu {
-        font-size: 2.2rem;
+    .card .card-body a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        position: unset;
     }
 
-    .card-body a {
-        font-size: 1.4rem;
+    .card .card-footer {
+        position: unset;
+    }
+
+    .card .text-muted {
+        position: unset;
+        font-size: 1.2rem;
     }
 
     /* footer */
+    footer.footer {
+        padding: 3rem 0 1rem 0;
+        background: #367c6d;
+    }
+
     .footer h3,
     .footer h1 {
+        color: rgb(255, 255, 255);
+        font-weight: 700;
         font-size: 2.8rem;
     }
 
     .footer p {
+        color: rgb(224, 224, 224);
+        font-weight: 500;
         font-size: 1.7rem;
+    }
+
+    .footer .nav-footer {
+        color: rgb(224, 224, 224);
+    }
+
+    .footer .footer-top img {
+        width: 15rem;
+        padding-right: 10px;
+        opacity: 0.9;
     }
 
     .footer .footer-item {
@@ -344,7 +416,26 @@ section.faq-penumpang h1 {
     }
 
     .nav-footer a {
+        color: rgb(224, 224, 224);
+        text-decoration: none;
         font-size: 1.5rem;
+    }
+
+    .sosmed .nav-footer {
+        list-style: none;
+        display: inline-block;
+    }
+
+    .sosmed-item {
+        display: inline;
+        margin-right: 5px;
+    }
+
+    .sosmed-link {
+        border: 1px solid rgba(255, 255, 255, 1);
+        display: inline-block;
+        padding: 5px 8px;
+        border-radius: 9px;
     }
 
     .sosmed-item .fa-instagram,
@@ -352,6 +443,15 @@ section.faq-penumpang h1 {
     .sosmed-item .fa-youtube,
     .sosmed-item .fa-twitter-square {
         font-size: 2rem;
-        transform: translateY(.1rem);
+        line-height: unset;
+        transform: translateY(2px);
+    }
+
+    .footer-top .driver {
+        padding-top: 10px;
+    }
+
+    .footer-bottom p {
+        color: rgb(211, 211, 211);
     }
 }

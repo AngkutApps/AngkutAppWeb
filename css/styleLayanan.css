@@ -3,73 +3,73 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --green: #16a085;
+  --green: #16a085;
 }
 
 html {
-    font-family: "Poppins", sans-serif;
-    font-size: 10px;
-    box-sizing: border-box;
-    overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 p {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 section {
-    padding: 5rem 0;
+  padding: 5rem 0;
 }
 
 /* nav */
 nav.navbar {
-    background: var(--green);
+  background: var(--green);
 }
 
 nav.navbar {
-    z-index: 999;
-    width: 100%;
+  z-index: 999;
+  width: 100%;
 }
 
 .navbar-brand {
-    width: 70px;
+  width: 70px;
 }
 
 .nav-link {
-    color: white !important;
-    font-size: 1.2rem;
+  color: white !important;
+  font-size: 1.2rem;
 }
 
 button.navbar-toggler {
-    background: unset;
-    border: unset;
-    outline: unset;
+  background: unset;
+  border: unset;
+  outline: unset;
 }
 
 .carousel {
-    height: 450px;
-    background-color: #16a085;
-    color: white;
+  height: 450px;
+  background-color: #16a085;
+  color: white;
 }
 
 .carousel .display-4 {
@@ -93,162 +93,162 @@ button.navbar-toggler {
 
 /* brands */
 .brands h1 {
-    font-size: 3rem;
-    color: var(--green);
-    font-weight: 700;
-    text-align: center;
+  font-size: 3rem;
+  color: var(--green);
+  font-weight: 700;
+  text-align: center;
 }
 
-.brands hr{ 
-width: 45%; 
-margin: auto; 
-margin-bottom: 3rem;
-margin-top: 1rem;
-border: 1px solid var(--green);
+.brands hr {
+  width: 45%;
+  margin: auto;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  border: 1px solid var(--green);
 }
 
-.brands img{
-    width: 29%;
+.brands img {
+  width: 29%;
 }
 
-.info-panel{
-    background: var(--green);
-    position: relative;
-    border-radius: 1rem;
-    margin: 1.5rem 0;
+.info-panel {
+  background: var(--green);
+  position: relative;
+  border-radius: 1rem;
+  margin: 1.5rem 0;
 }
 
-.info-panel span{
-    position: absolute;
-    background: white;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    line-height: 4rem;
-    text-align: center;
-    top: 2.5rem;
-    left: 1rem;
+.info-panel span {
+  position: absolute;
+  background: white;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  line-height: 4rem;
+  text-align: center;
+  top: 2.5rem;
+  left: 1rem;
 }
 
-.text-info{
+.text-info {
   margin-left: 6rem;
   padding: 1rem 0;
 }
 
-.text-info h2{
-    color: white;
-    font-size: 1.8rem;
+.text-info h2 {
+  color: white;
+  font-size: 1.8rem;
 }
 
-.text-info p{
-    color: white;
-    font-size: 1.4rem;
+.text-info p {
+  color: white;
+  font-size: 1.4rem;
 }
 
 
 
 /* berita pengguna */
 .driver h1 {
-    font-size: 3rem;
-    color: var(--green);
-    font-weight: 700;
-    text-align: center;
+  font-size: 3rem;
+  color: var(--green);
+  font-weight: 700;
+  text-align: center;
 }
 
 .driver hr {
-    width: 50%;
-    margin: 1rem auto;
-    border: 1px solid var(--green)
+  width: 50%;
+  margin: 1rem auto;
+  border: 1px solid var(--green)
 }
 
-.driver .card{
-    margin-top: 6rem !important;
-    border: unset;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+.driver .card {
+  margin-top: 6rem !important;
+  border: unset;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
 }
 
 .profile-card-2 .card-body {
-    position: relative;
+  position: relative;
 }
 
 .profile-card-2 .profile {
-    border-radius: 50%;
-    position: absolute;
-    top: -42px;
-    left: 0j;
-    max-width: 75px;
-    border: 3px solid #16a085;
+  border-radius: 50%;
+  position: absolute;
+  top: -42px;
+  left: 0;
+  max-width: 75px;
+  border: 3px solid #16a085;
 }
 
 .profile-card-2 h5 {
-    font-weight: 600;
-    color: rgba(0,0,0,.6);
-    font-size: 2rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, .6);
+  font-size: 2rem;
 }
 
 .profile-card-2 h6 {
-    margin-top: -.5rem;
-    font-weight: 600;
-    color: rgba(0,0,0,.5);
-    font-size: 1.3rem;
+  margin-top: -.5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, .5);
+  font-size: 1.3rem;
 }
 
- .card .card-body hr{
-    width: 50%;
-    margin:auto; 
+.card .card-body hr {
+  width: 50%;
+  margin: auto;
 }
 
 .profile-card-2 .card-text {
-    font-weight: 400;
-    font-size: 1.4rem;
-    color: rgba(0,0,0,.5);
-    margin-top: 1rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, .5);
+  margin-top: 1rem;
 }
 
 /* faq */
 
 .question h1 {
-    color: var(--green);
-    font-weight: 550;
+  color: var(--green);
+  font-weight: 550;
 }
 
 .question hr {
-    width: 50%;
-    border: 1px solid var(--green);
-    margin: auto;
+  width: 50%;
+  border: 1px solid var(--green);
+  margin: auto;
 }
 
 .question .collapsible-link::before {
-    content: "";
-    width: 14px;
-    height: 2px;
-    background: #333;
-    position: absolute;
-    top: calc(50% - 1px);
-    right: 1rem;
-    display: block;
-    transition: all 0.3s;
+  content: "";
+  width: 14px;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 1rem;
+  display: block;
+  transition: all 0.3s;
 }
 
 /* Vertical line */
 .question .collapsible-link::after {
-    content: "";
-    width: 2px;
-    height: 14px;
-    background: #333;
-    position: absolute;
-    top: calc(50% - 7px);
-    right: calc(1rem + 6px);
-    display: block;
-    transition: all 0.3s;
+  content: "";
+  width: 2px;
+  height: 14px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 7px);
+  right: calc(1rem + 6px);
+  display: block;
+  transition: all 0.3s;
 }
 
 .question .collapsible-link[aria-expanded="true"]::after {
-    transform: rotate(90deg) translateX(-1px);
+  transform: rotate(90deg) translateX(-1px);
 }
 
 .question .collapsible-link[aria-expanded="true"]::before {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /* footer */
@@ -336,108 +336,108 @@ border: 1px solid var(--green);
 }
 
 @media (min-width: 992px) {
-    .nav-link {
-        margin-right: 30px;
-        text-transform: uppercase;
-        font-size: 1.4rem;
-        color: white !important;
-    }
+  .nav-link {
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: white !important;
+  }
 
-    .nav-link:hover::after {
-        content: "";
-        display: block;
-        border-bottom: 2px solid white;
-        width: 50%;
-        margin: auto;
-        padding-bottom: 5px;
-        margin-bottom: -8px;
-    }
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid white;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
 
-/* header */
-.carousel{
+  /* header */
+  .carousel {
     height: 600px;
-}
+  }
 
-.carousel .display-4{
+  .carousel .display-4 {
     text-align: left;
     font-size: 5rem;
     margin-top: 30%;
-}
+  }
 
-.carousel h2{
-    font-size : 3.1rem;
+  .carousel h2 {
+    font-size: 3.1rem;
     text-align: left;
-}
+  }
 
-.carousel img{
+  .carousel img {
     margin-top: 30%;
-}
+  }
 
-/* brands */
-.brands h1{
+  /* brands */
+  .brands h1 {
     font-size: 3.5rem;
-}
+  }
 
-.brands hr{
+  .brands hr {
     width: 15%;
-}
+  }
 
-.brands img{
+  .brands img {
     width: 50%;
     margin-left: 10rem;
-}
+  }
 
-.info-panel{
+  .info-panel {
     margin-top: 0;
     margin-bottom: 1.5rem;
-}
+  }
 
-.info-panel span{
+  .info-panel span {
     font-size: 1.9rem;
-}
+  }
 
-.text-info h2{
+  .text-info h2 {
     font-size: 2rem;
-}
+  }
 
-.text-info p{
+  .text-info p {
     font-size: 1.6rem;
-}
+  }
 
-/*berita pengguna*/
-.driver h1{
+  /*berita pengguna*/
+  .driver h1 {
     font-size: 3.5rem;
-}
+  }
 
-.driver hr{
+  .driver hr {
     width: 15%;
-}
+  }
 
-.profile-card-2 .profile {
+  .profile-card-2 .profile {
     top: -4.2rem;
     left: 0;
     max-width: 75px;
     border: 2px solid #16a085;
-}
+  }
 
-/* faq */
+  /* faq */
 
-.question h1 {
+  .question h1 {
     font-size: 3.5rem;
-}
+  }
 
-.question hr {
+  .question hr {
     width: 15%;
     margin-bottom: 2rem;
-}
+  }
 
-.question .card h6{
+  .question .card h6 {
     font-size: 1.4rem;
     font-weight: 500;
-}
+  }
 
 
-/* footer */
+  /* footer */
   footer.footer {
     padding: 3rem 0 1rem 0;
     background: #367c6d;

@@ -58,6 +58,7 @@ nav.navbar {
 .nav-link {
     color: white !important;
     font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 button.navbar-toggler {
@@ -66,6 +67,7 @@ button.navbar-toggler {
     outline: unset;
 }
 
+/* header */
 .jumbotron {
     padding: 5rem 2rem;
     margin-top: 13%;
@@ -83,6 +85,7 @@ button.navbar-toggler {
     font-size: 1.2rem;
 }
 
+/* main */
 .main h2 {
     color: rgba(0, 0, 0, 0.7);
     font-weight: 700;
@@ -96,7 +99,7 @@ button.navbar-toggler {
 
 .main span {
     display: inline-block;
-    background: rgba(0, 0, 0, 0.7);
+    background: var(--green);
     color: white;
     width: 10%;
     height: 15%;
@@ -110,6 +113,7 @@ button.navbar-toggler {
     color: rgba(0, 0, 0, 0.7);
 }
 
+/* info */
 .info {
     background: #16a0841a;
 }
@@ -130,10 +134,7 @@ button.navbar-toggler {
     color: rgba(0, 0, 0, 0.7);
 }
 
-.info img {
-    margin-top: 10rem;
-}
-
+/* kelebihan */
 .kelebihan h1 {
     text-align: center;
     color: var(--green);
@@ -168,7 +169,7 @@ button.navbar-toggler {
     padding: .8rem;
 }
 
-/* section tim */
+/* our tim */
 
 .tim {
     padding-bottom: 20rem;
@@ -386,8 +387,8 @@ button.navbar-toggler {
         font-size: 1.7rem;
     }
 
-    .info img {
-        margin-top: 3rem;
+    .info img.img-fluid {
+        width: 500px !important;
     }
 
     .kelebihan h1 {
