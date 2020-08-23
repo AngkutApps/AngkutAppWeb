@@ -179,11 +179,54 @@ section.daftar {
   height: 3rem;
   border-radius: 50%;
   text-align: center;
+  color: white;
 }
 
 .petunjuk p {
   font-size: 1.5rem;
   line-height: 2;
+}
+
+@media (min-width: 360px) and (max-width: 450px) {
+  .cara-daftar img {
+    width: 50%;
+    float: unset;
+    margin-left: 8.9rem;
+  }
+
+  .petunjuk {
+    top: 3rem
+  }
+
+  .petunjuk span {
+    left: 4rem;
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .petunjuk p {
+    margin-left: 5rem;
+  }
+
+  .petunjuk p::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    left: 1.9rem;
+    width: 2px;
+    background: var(--green);
+    z-index: -99;
+  }
+
+  .barcode p.android {
+    margin-left: 2.5rem !important;
+  }
+
+  .barcode p.ios {
+    margin-left: 4.4rem !important;
+  }
 }
 
 /* form daftar */
@@ -397,12 +440,27 @@ input[type="number"]:focus,
   }
 
   .cara-daftar img {
-    width: 40%;
-    margin-right: 1rem;
+    width: 100%;
+    float: unset;
+    margin-left: 8.9rem;
+  }
+
+  .petunjuk {
+    top: 3rem
+  }
+
+  .petunjuk span {
+    left: 4rem;
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .petunjuk p {
+    margin-left: 5rem;
   }
 
   .form-daftar {
-    margin: auto;
+    margin: 5rem auto;
   }
 
   .download {
