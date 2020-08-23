@@ -232,6 +232,48 @@ main .card img {
     font-weight: 700;
 }
 
+@media (min-width: 320px) and (max-width: 450px) {
+    .jumbotron.jumbotron-fluid {
+        margin-top: 20%;
+    }
+
+    .kategori .link-kategori {
+        font-size: 1.1rem;
+    }
+
+    .form-group .form-input {
+        padding: 6px;
+        width: 20rem;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        padding-left: 1rem;
+    }
+
+    .form-group {
+        margin-top: 2rem;
+    }
+
+    .search-btn .fa-search {
+        font-size: 18px;
+        padding-right: 8px;
+        margin-top: 3px;
+    }
+
+    /* main */
+    main .card-wrapper a {
+        font-size: 1.5rem;
+    }
+
+    main .card {
+        margin-bottom: 5rem;
+    }
+
+    .card .card-body a {
+        font-size: 1.1rem;
+        top: 0;
+    }
+}
+
 
 /* footer */
 .footer {
