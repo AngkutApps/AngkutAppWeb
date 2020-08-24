@@ -335,6 +335,45 @@ button.navbar-toggler {
   color: rgb(211, 211, 211);
 }
 
+@media (min-width: 768px) {
+  .carousel .display-4 {
+    font-size: 5rem;
+    text-align: left;
+    margin-top: 10%;
+  }
+
+  .carousel h2 {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .carousel img {
+    margin-top: 10rem;
+  }
+
+  .brands hr {
+    width: 20%;
+  }
+
+  .brands img {
+    width: 95%;
+    margin-left: 0rem;
+  }
+
+  .brands .info-panel {
+    margin-top: 0rem;
+  }
+
+  .driver hr {
+    width: 20%;
+  }
+
+  .question hr {
+    width: 20%;
+    margin: 2rem auto;
+  }
+}
+
 @media (min-width: 992px) {
   .nav-link {
     margin-right: 30px;

@@ -219,6 +219,14 @@ button.navbar-toggler {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .jumbotron {
+    margin-top: 8%;
+  }
+
+  .jumbotron .display-4 {
+    margin-top: 10%;
+  }
+
   .single-tim {
     margin-right: 5rem;
   }
@@ -243,6 +251,14 @@ button.navbar-toggler {
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
+  .jumbotron {
+    margin-top: 8%;
+  }
+
+  .jumbotron .display-4 {
+    margin-top: 20%;
+  }
+
   .single-tim {
     margin-right: 0;
   }

@@ -478,6 +478,17 @@ section.faq-penumpang h1 {
   color: rgb(211, 211, 211);
 }
 
+@media (min-width: 768px) {
+  .content .isu {
+    border-left: 1px solid var(--green);
+    height: 100%;
+  }
+
+  .content .isuLainnya p {
+    line-height: 2;
+  }
+}
+
 @media (min-width: 992px) {
   nav.navbar {
     background: var(--green);
@@ -610,5 +621,11 @@ section.faq-penumpang h1 {
   .sosmed-item .fa-twitter-square {
     font-size: 2rem;
     transform: translateY(0.1rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .bantuan picture img {
+    width: 110px;
   }
 }

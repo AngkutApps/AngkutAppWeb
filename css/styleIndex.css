@@ -119,7 +119,7 @@ section.layanan hr {
 
 section.layanan img {
   padding: 10px 0;
-  width: 30%;
+  width: 35%;
   height: 70%;
   border-radius: 30px;
 }
@@ -147,7 +147,6 @@ section.pilar-angkut hr {
 }
 
 .pilar-angkut .card {
-  height: 50vh;
   overflow-y: hidden;
 }
 
@@ -481,5 +480,67 @@ section.testimonial hr {
   .sosmed-item .fa-twitter-square {
     font-size: 2rem;
     transform: translateY(.1rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .jumbotron .display-4 {
+    font-size: 5rem;
+    margin-top: 16%;
+  }
+
+  .jumbotron h2 {
+    font-size: 3rem;
+  }
+
+  section.layanan hr {
+    width: 18%;
+  }
+
+  section.layanan img {
+    width: 50%;
+    height: 50%;
+    border-radius: 18%;
+  }
+
+  section.pilar-angkut hr {
+    width: 18%;
+  }
+
+  section.testimonial hr {
+    width: 13%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-link {
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid white;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    background-position-x: 0rem;
+    background-position-y: 64rem;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 6.5rem;
+    margin-top: 26.5%;
+  }
+
+  .jumbotron h2 {
+    font-size: 3.2rem;
   }
 }

@@ -359,6 +359,28 @@ main .card img {
     color: rgb(211, 211, 211);
 }
 
+@media (min-width: 768px) {
+    .jumbotron.jumbotron-fluid {
+        margin-top: 7.5%;
+    }
+
+    main .card-wrapper a {
+        font-size: 2.5rem;
+    }
+
+    .card-wrapper .text-muted {
+        font-size: 2rem;
+    }
+
+    .card .card-body a {
+        font-size: 2rem;
+    }
+
+    .card .text-muted {
+        font-size: 1.8rem;
+    }
+}
+
 @media (min-width: 992px) {
     .nav-link {
         margin-right: 30px;

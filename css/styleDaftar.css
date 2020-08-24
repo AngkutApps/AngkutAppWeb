@@ -496,6 +496,76 @@ input[type="number"]:focus,
   }
 }
 
+@media (min-width: 768px) {
+  .jumbotron .display-4 {
+    font-size: 4.5rem;
+    margin-top: 15%;
+  }
+
+  .container .info-panel {
+    margin-top: -6.5rem;
+    z-index: 2;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 12px;
+  }
+
+  .info-panel img {
+    width: 7rem;
+    margin-left: 25rem;
+    float: unset;
+  }
+
+  .info-panel p {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: 0;
+  }
+
+  .cara-daftar img {
+    width: 40% !important;
+  }
+
+  .petunjuk span {
+    line-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .petunjuk p {
+    font-size: 1rem;
+    line-height: 2;
+  }
+
+  .barcode p {
+    margin-top: 1.8rem;
+  }
+
+  .barcode p.android {
+    margin-left: .7rem;
+  }
+
+  .barcode p.ios {
+    margin-left: 2.5rem;
+  }
+
+  .mobile {
+    margin-top: unset;
+  }
+
+  .download .mobile::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 16rem;
+    width: 0.5rem;
+    background-color: var(--green);
+    top: -2rem;
+    left: -8rem;
+  }
+}
+
 @media (min-width: 992px) {
   nav.navbar {
     background: var(--green);
@@ -572,6 +642,7 @@ input[type="number"]:focus,
 
   .cara-daftar img {
     width: 30% !important;
+    float: left;
     margin-right: 5rem !important;
   }
 
@@ -582,17 +653,13 @@ input[type="number"]:focus,
 
   .petunjuk span {
     line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
   }
 
   .petunjuk p {
     font-size: 1.5rem;
     line-height: 2.4;
-  }
-
-  .cara-daftar img {
-    width: 40%;
-    float: left;
-    margin-right: 30px;
   }
 
   .form-daftar {
@@ -712,5 +779,26 @@ input[type="number"]:focus,
 
   .footer-bottom p {
     color: rgb(211, 211, 211);
+  }
+}
+
+@media (min-width: 1024px) {
+  .jumbotron .display-4 {
+    margin-top: 13%;
+  }
+
+  .cara-daftar img {
+    width: 45% !important;
+  }
+
+  .petunjuk span {
+    margin-left: -3.5rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .petunjuk p {
+    font-size: 1.7rem;
+    line-height: 2;
   }
 }
