@@ -220,7 +220,7 @@ button.navbar-toggler {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .jumbotron {
-    margin-top: 8%;
+    margin-top: 7%;
   }
 
   .jumbotron .display-4 {
@@ -252,7 +252,7 @@ button.navbar-toggler {
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .jumbotron {
-    margin-top: 8%;
+    margin-top: 6% !important;
   }
 
   .jumbotron .display-4 {
