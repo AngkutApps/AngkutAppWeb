@@ -323,6 +323,35 @@ section.testimonial hr {
   color: rgb(211, 211, 211);
 }
 
+@media (min-width: 768px) {
+  .jumbotron .display-4 {
+    font-size: 5rem;
+    margin-top: 16%;
+  }
+
+  .jumbotron h2 {
+    font-size: 3rem;
+  }
+
+  section.layanan hr {
+    width: 18%;
+  }
+
+  section.layanan img {
+    width: 50%;
+    height: 50%;
+    border-radius: 18%;
+  }
+
+  section.pilar-angkut hr {
+    width: 18%;
+  }
+
+  section.testimonial hr {
+    width: 13%;
+  }
+}
+
 @media (min-width: 992px) {
   .nav-link {
     margin-right: 30px;
@@ -343,13 +372,13 @@ section.testimonial hr {
 
   .jumbotron {
     background-position-x: 0px;
-    margin-top: -67px;
+    margin-top: -70px;
     background-image: url("../img/bg1.svg");
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
     height: 695px;
-    background-position-y: -180px;
+    background-position-y: -23rem !important;
     position: relative;
     overflow: hidden;
   }
@@ -367,7 +396,7 @@ section.testimonial hr {
 
   .jumbotron .display-4 {
     font-size: 60px;
-    margin-top: 22%;
+    margin-top: 22% !important;
     text-align: left;
   }
 
@@ -483,36 +512,7 @@ section.testimonial hr {
   }
 }
 
-@media (min-width: 768px) {
-  .jumbotron .display-4 {
-    font-size: 5rem;
-    margin-top: 16%;
-  }
-
-  .jumbotron h2 {
-    font-size: 3rem;
-  }
-
-  section.layanan hr {
-    width: 18%;
-  }
-
-  section.layanan img {
-    width: 50%;
-    height: 50%;
-    border-radius: 18%;
-  }
-
-  section.pilar-angkut hr {
-    width: 18%;
-  }
-
-  section.testimonial hr {
-    width: 13%;
-  }
-}
-
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .nav-link {
     margin-right: 30px;
     text-transform: uppercase;
@@ -532,12 +532,12 @@ section.testimonial hr {
 
   .jumbotron {
     background-position-x: 0rem;
-    background-position-y: 64rem;
+    background-position-y: 62rem !important;
   }
 
   .jumbotron .display-4 {
     font-size: 6.5rem;
-    margin-top: 26.5%;
+    margin-top: 26.5% !important;
   }
 
   .jumbotron h2 {
