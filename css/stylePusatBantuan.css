@@ -128,10 +128,21 @@ button.navbar-toggler {
 }
 
 .content h2 {
-  margin-left: 5rem;
-  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
   color: var(--green);
   font-weight: 600;
+}
+
+.content a {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+}
+
+.content .pagination {
+  margin-bottom: 5rem;
 }
 
 .content h2.text-isu {
@@ -143,7 +154,7 @@ button.navbar-toggler {
 
 .content .isu {
   border-left: 1px solid var(--green);
-  height: 100%;
+  height: 85vh;
 }
 
 .content .isuLainnya p {
@@ -151,6 +162,7 @@ button.navbar-toggler {
   font-size: 15px;
   padding-left: 2rem;
   margin-bottom: 1.7rem;
+  line-height: 2.5;
 }
 
 /* bantuan */
@@ -190,19 +202,19 @@ button.navbar-toggler {
   outline-color: rgb(169, 169, 169);
 }
 
-.form-area .single-form input:focus + label,
-.form-area .single-form input:valid + label,
-.form-area .single-form textarea:focus + label,
-.form-area .single-form textarea:valid + label {
+.form-area .single-form input:focus+label,
+.form-area .single-form input:valid+label,
+.form-area .single-form textarea:focus+label,
+.form-area .single-form textarea:valid+label {
   color: var(--green);
   font-size: 0.9rem;
   top: -10px;
 }
 
-.form-area .single-form input:focus + label:after,
-.form-area .single-form input:valid + label:after,
-.form-area .single-form textarea:focus + label:after,
-.form-area .single-form textarea:valid + label:after {
+.form-area .single-form input:focus+label:after,
+.form-area .single-form input:valid+label:after,
+.form-area .single-form textarea:focus+label:after,
+.form-area .single-form textarea:valid+label:after {
   content: " ";
 }
 
@@ -257,6 +269,7 @@ button.navbar-toggler {
 .question {
   background-color: var(--green);
 }
+
 .question h1 {
   color: var(--green);
   font-weight: 550;
@@ -275,6 +288,7 @@ button.navbar-toggler {
   border: 1px solid var(--green);
   margin: auto;
 }
+
 /* .question {
   background: #007b5e;
   color: #eee;
@@ -292,6 +306,7 @@ button.navbar-toggler {
   font-size: 20px;
   font-weight: bold;
 }
+
 .question .nav-tabs .nav-link {
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
@@ -509,7 +524,9 @@ section.faq-penumpang h1 {
   }
 
   .content h2 {
+    text-align: left;
     font-size: 2.2rem;
+    margin-left: 4.8rem;
   }
 
   .content h2.text-isu {

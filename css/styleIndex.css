@@ -110,7 +110,7 @@ section.layanan h1 {
 }
 
 section.layanan hr {
-  width: 45%;
+  width: 30%;
   margin: 15px auto;
   border: 1px solid var(--green);
   opacity: 0.8;
@@ -129,6 +129,7 @@ section.layanan p {
   color: rgba(0, 0, 0, 0.6);
 }
 
+/* pilar */
 .pilar-angkut .container {
   margin-top: -30px;
 }
@@ -138,29 +139,39 @@ section.pilar-angkut h1 {
 }
 
 section.pilar-angkut hr {
-  width: 45%;
+  width: 25%;
   margin: 15px auto;
   border: 1px solid var(--green);
   opacity: 0.8;
   margin-bottom: 30px;
 }
 
-.pilar-angkut img {
-  width: 30%;
-  padding: 8px 0;
+.pilar-angkut .card {
+  height: 50vh;
+  overflow-y: hidden;
 }
 
-.pilar-angkut h4 {
-  font-size: 2.1rem;
-  color: var(--green);
+.pilar-angkut img {
+  border-radius: 50%;
+  background: var(--green);
+  width: 20%;
+  padding: 8px 0;
+  margin: 1.5rem auto;
+}
+
+
+.pilar-angkut h5 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, .8);
 }
 
 .pilar-angkut p {
   font-size: 1.4rem;
   color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 40px;
 }
 
+/* testi */
 section.testimonial {
   margin-top: -50px;
   margin-bottom: 50px;
@@ -171,14 +182,34 @@ section.testimonial h1 {
 }
 
 section.testimonial hr {
-  width: 15%;
+  width: 23%;
   margin: 15px auto;
   border: 1px solid var(--green);
   opacity: 0.8;
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
 }
 
-.testimonial .card-testimonial {
+.testimonial .card {
+  border: unset;
+  margin-bottom: 2rem;
+}
+
+.testimonial .card img {
+  width: 30%;
+  margin: 1.5rem auto;
+}
+
+.testimonial .card p {
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 1.1rem !important;
+}
+
+.testimonial .card .blockquote-footer {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* .testimonial .card-testimonial {
   width: 90%;
   height: auto;
   border: unset;
@@ -207,7 +238,7 @@ section.testimonial hr {
   width: 50% !important;
   clip-path: circle(50%);
   margin: auto !important;
-}
+} */
 
 /* footer */
 .footer {
@@ -366,7 +397,7 @@ section.testimonial hr {
     padding-top: 30px;
   }
 
-  /* pilar ankut */
+  /* pilar angkut */
   .pilar-angkut .container {
     margin-top: -50px;
   }
@@ -380,17 +411,24 @@ section.testimonial hr {
   }
 
   .pilar-angkut img {
-    width: 60%;
+    border-radius: 50%;
+    background: var(--green);
+    width: 30%;
     padding: 8px 0;
+    margin: 1.5rem auto;
   }
 
-  .pilar-angkut h4 {
-    font-size: 2.5rem;
-    color: var(--green);
+
+  .pilar-angkut h5 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, .8);
   }
 
   .pilar-angkut p {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 40px;
   }
 
   /* testimonial */
@@ -399,40 +437,20 @@ section.testimonial hr {
   }
 
   section.testimonial hr {
-    width: 8%;
+    width: 7%;
   }
 
-  .card-testimonial img {
-    width: 33% !important;
-    float: left;
+  .testimonial .card img {
+    width: 50%;
   }
 
-  .testimonial .card-testimonial {
-    width: 95%;
+  .testimonial .card p {
+    margin-bottom: 1.2rem !important;
   }
 
-  .testimonial .card-testimonial {
-    clear: both;
-  }
-
-  .testimonial i.fa-quote-left {
-    margin-left: 2rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
-
-  .blockquote p {
-    font-size: 1.6rem;
-    transform: translateX(2rem);
-  }
-
-  .blockquote-footer {
-    padding-top: 1.7rem;
+  .testimonial .card .blockquote-footer {
     font-size: 1.5rem;
-    font-weight: 700;
-    transform: translateX(2rem);
   }
-
 
   /* footer */
   .footer h3,
