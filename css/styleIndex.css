@@ -158,11 +158,10 @@ section.pilar-angkut hr {
   margin: 1.5rem auto;
 }
 
-
 .pilar-angkut h5 {
   font-size: 2rem;
   font-weight: 700;
-  color: rgba(0, 0, 0, .8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .pilar-angkut p {
@@ -323,10 +322,22 @@ section.testimonial hr {
   color: rgb(211, 211, 211);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 320px) and (max-width: 450px) {
+  .jumbotron {
+    height: 350px;
+  }
+  .jumbotron .display-4 {
+    font-size: 3.5rem !important;
+  }
+  .jumbotron h2 {
+    font-size: 2.2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
   .jumbotron .display-4 {
     font-size: 5rem;
-    margin-top: 16%;
+    margin-top: 10rem !important;
   }
 
   .jumbotron h2 {
@@ -388,9 +399,11 @@ section.testimonial hr {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to top,
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 0));
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0)
+    );
     bottom: 0;
   }
 
@@ -446,11 +459,10 @@ section.testimonial hr {
     margin: 1.5rem auto;
   }
 
-
   .pilar-angkut h5 {
     font-size: 2.1rem;
     font-weight: 700;
-    color: rgba(0, 0, 0, .8);
+    color: rgba(0, 0, 0, 0.8);
   }
 
   .pilar-angkut p {
@@ -508,7 +520,7 @@ section.testimonial hr {
   .sosmed-item .fa-youtube,
   .sosmed-item .fa-twitter-square {
     font-size: 2rem;
-    transform: translateY(.1rem);
+    transform: translateY(0.1rem);
   }
 }
 
@@ -537,7 +549,6 @@ section.testimonial hr {
 
   .jumbotron .display-4 {
     font-size: 6.5rem;
-    margin-top: 26.5% !important;
   }
 
   .jumbotron h2 {
