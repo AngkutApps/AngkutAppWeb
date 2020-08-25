@@ -207,37 +207,6 @@ section.testimonial hr {
   font-weight: 600;
 }
 
-/* .testimonial .card-testimonial {
-  width: 90%;
-  height: auto;
-  border: unset;
-  margin: auto;
-}
-
-.testimonial i.fa-quote-left {
-  font-size: 3rem;
-  color: var(--green);
-  margin-top: 3rem;
-  margin-bottom: 1.7rem;
-}
-
-.blockquote p {
-  font-size: 1.6rem;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.blockquote-footer {
-  padding-top: 1.7rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.card-testimonial img {
-  width: 50% !important;
-  clip-path: circle(50%);
-  margin: auto !important;
-} */
-
 /* footer */
 .footer {
   padding-top: 3rem;
@@ -324,20 +293,22 @@ section.testimonial hr {
 
 @media (min-width: 320px) and (max-width: 450px) {
   .jumbotron {
-    height: 350px;
+    height: 400px;
   }
+
   .jumbotron .display-4 {
-    font-size: 3.5rem !important;
+    font-size: 3rem !important;
   }
+
   .jumbotron h2 {
-    font-size: 2.2rem !important;
+    font-size: 2rem !important;
   }
 }
 
 @media (max-width: 768px) {
   .jumbotron .display-4 {
     font-size: 5rem;
-    margin-top: 10rem !important;
+    margin-top: 12rem !important;
   }
 
   .jumbotron h2 {
@@ -399,11 +370,9 @@ section.testimonial hr {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0)
-    );
+    background-image: linear-gradient(to top,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0));
     bottom: 0;
   }
 
@@ -521,37 +490,5 @@ section.testimonial hr {
   .sosmed-item .fa-twitter-square {
     font-size: 2rem;
     transform: translateY(0.1rem);
-  }
-}
-
-@media (max-width: 1024px) {
-  .nav-link {
-    margin-right: 30px;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-  }
-
-  .nav-link:hover::after {
-    content: "";
-    display: block;
-    border-bottom: 2px solid white;
-    width: 50%;
-    margin: auto;
-    padding-bottom: 5px;
-    margin-bottom: -8px;
-  }
-
-  .jumbotron {
-    background-position-x: 0rem;
-    background-position-y: 62rem !important;
-  }
-
-  .jumbotron .display-4 {
-    font-size: 6.5rem;
-  }
-
-  .jumbotron h2 {
-    font-size: 3.2rem;
   }
 }
