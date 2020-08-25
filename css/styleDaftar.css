@@ -153,7 +153,6 @@ section.daftar {
   margin-top: 5.7rem;
 }
 
-
 .cara-daftar img {
   width: 35%;
   float: left;
@@ -167,7 +166,6 @@ section.daftar {
 
 .petunjuk {
   position: relative;
-
 }
 
 .petunjuk span {
@@ -195,7 +193,7 @@ section.daftar {
   }
 
   .petunjuk {
-    top: 3rem
+    top: 3rem;
   }
 
   .petunjuk span {
@@ -209,7 +207,7 @@ section.daftar {
   }
 
   .petunjuk p::before {
-    content: '';
+    content: "";
     position: absolute;
     display: inline-block;
     top: 0;
@@ -446,7 +444,7 @@ input[type="number"]:focus,
   }
 
   .petunjuk {
-    top: 3rem
+    top: 3rem;
   }
 
   .petunjuk span {
@@ -543,7 +541,7 @@ input[type="number"]:focus,
   }
 
   .barcode p.android {
-    margin-left: .7rem;
+    margin-left: 0.7rem;
   }
 
   .barcode p.ios {
@@ -648,7 +646,6 @@ input[type="number"]:focus,
 
   .petunjuk {
     position: relative;
-
   }
 
   .petunjuk span {
