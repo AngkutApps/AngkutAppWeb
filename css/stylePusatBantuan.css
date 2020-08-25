@@ -202,19 +202,19 @@ button.navbar-toggler {
   outline-color: rgb(169, 169, 169);
 }
 
-.form-area .single-form input:focus+label,
-.form-area .single-form input:valid+label,
-.form-area .single-form textarea:focus+label,
-.form-area .single-form textarea:valid+label {
+.form-area .single-form input:focus + label,
+.form-area .single-form input:valid + label,
+.form-area .single-form textarea:focus + label,
+.form-area .single-form textarea:valid + label {
   color: var(--green);
   font-size: 0.9rem;
   top: -10px;
 }
 
-.form-area .single-form input:focus+label:after,
-.form-area .single-form input:valid+label:after,
-.form-area .single-form textarea:focus+label:after,
-.form-area .single-form textarea:valid+label:after {
+.form-area .single-form input:focus + label:after,
+.form-area .single-form input:valid + label:after,
+.form-area .single-form textarea:focus + label:after,
+.form-area .single-form textarea:valid + label:after {
   content: " ";
 }
 
@@ -263,6 +263,51 @@ button.navbar-toggler {
 
 .bantuan h4 {
   color: var(--green);
+}
+
+/*penumpang*/
+.faq-penumpang h1 {
+  color: #16a085;
+}
+.faq-penumpang .collapsible-link::before {
+  content: "";
+  width: 14px;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 1rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+/* Vertical line */
+.faq-penumpang .collapsible-link::after {
+  content: "";
+  width: 2px;
+  height: 14px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 7px);
+  right: calc(1rem + 6px);
+  display: block;
+  transition: all 0.3s;
+}
+
+.faq-penumpang .collapsible-link[aria-expanded="true"]::after {
+  transform: rotate(90deg) translateX(-1px);
+}
+
+.faq-penumpang .collapsible-link[aria-expanded="true"]::before {
+  transform: rotate(180deg);
+}
+
+.faq-penumpang h6 {
+  font-size: 1.3rem;
+}
+
+.faq-penumpang p {
+  font-size: 2rem;
 }
 
 /* question */

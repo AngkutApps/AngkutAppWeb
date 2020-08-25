@@ -98,6 +98,12 @@ button.navbar-toggler {
   font-weight: 700;
   text-align: center;
 }
+.cek-tarif h2 {
+  font-size: 3rem;
+  color: var(--green);
+  font-weight: 700;
+  text-align: center;
+}
 
 .brands hr {
   width: 45%;
@@ -145,7 +151,33 @@ button.navbar-toggler {
   font-size: 1.4rem;
 }
 
+/*form cek tarif*/
+.form-group input {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  height: 4rem;
+  background: unset !important;
+  outline: none !important;
+  border: unset;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6) !important;
+}
 
+.cek-tarif button.btn-success {
+  outline: unset;
+  border: unset;
+  background: var(--green);
+  padding: 1rem;
+  color: white;
+  width: 70%;
+  font-size: 1.3rem;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+.cek-tarif button.btn-success:hover {
+  background-color: #106d5a;
+  transition: 0.5s;
+}
 
 /* berita pengguna */
 .driver h1 {
@@ -158,7 +190,7 @@ button.navbar-toggler {
 .driver hr {
   width: 50%;
   margin: 1rem auto;
-  border: 1px solid var(--green)
+  border: 1px solid var(--green);
 }
 
 .driver .card {
@@ -182,14 +214,14 @@ button.navbar-toggler {
 
 .profile-card-2 h5 {
   font-weight: 600;
-  color: rgba(0, 0, 0, .6);
+  color: rgba(0, 0, 0, 0.6);
   font-size: 2rem;
 }
 
 .profile-card-2 h6 {
-  margin-top: -.5rem;
+  margin-top: -0.5rem;
   font-weight: 600;
-  color: rgba(0, 0, 0, .5);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 1.3rem;
 }
 
@@ -201,7 +233,7 @@ button.navbar-toggler {
 .profile-card-2 .card-text {
   font-weight: 400;
   font-size: 1.4rem;
-  color: rgba(0, 0, 0, .5);
+  color: rgba(0, 0, 0, 0.5);
   margin-top: 1rem;
 }
 
@@ -474,7 +506,6 @@ button.navbar-toggler {
     font-size: 1.4rem;
     font-weight: 500;
   }
-
 
   /* footer */
   footer.footer {
