@@ -305,7 +305,7 @@ section.testimonial hr {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 991.9px) {
   .jumbotron .display-4 {
     font-size: 5rem;
     margin-top: 12rem !important;
