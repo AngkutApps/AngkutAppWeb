@@ -46,21 +46,23 @@ section {
 
 /* nav */
 nav.navbar {
-  background: var(--green);
-}
-
-nav.navbar {
   z-index: 999;
-  width: 100%;
+  padding: .7rem 1rem !important;
 }
 
 .navbar-brand {
-  width: 70px;
+  width: 60px;
 }
 
 .nav-link {
-  color: white !important;
+  color: rgba(0, 0, 0, 0.8) !important;
   font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 2.5rem;
+}
+
+.nav-link:hover {
+  color: var(--green) !important;
 }
 
 button.navbar-toggler {
@@ -69,6 +71,15 @@ button.navbar-toggler {
   outline: unset;
 }
 
+.navbar .fa-angle-down {
+  margin-left: .6rem;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  font-size: 1.2rem;
+}
+
+/* header */
 .carousel {
   height: 450px;
   background-color: #16a085;
@@ -439,21 +450,12 @@ input[type="number"]:focus,
 }
 
 @media (min-width: 992px) {
-  .nav-link {
-    margin-right: 30px;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    color: white !important;
+  .navbar-brand {
+    width: 80px;
   }
 
-  .nav-link:hover::after {
-    content: "";
-    display: block;
-    border-bottom: 2px solid white;
-    width: 50%;
-    margin: auto;
-    padding-bottom: 5px;
-    margin-bottom: -8px;
+  .nav-link {
+    font-size: 1.5rem;
   }
 
   /* header */
