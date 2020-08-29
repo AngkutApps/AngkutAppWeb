@@ -12,6 +12,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
 
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="css/all.css" />
 
@@ -22,19 +26,19 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow p-2 mb-5 bg-white">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="img/logo.png" alt="" />
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon text-white"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav m-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Beranda</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">Tentang Kami</a>
@@ -56,37 +60,39 @@
     </div>
   </nav>
 
-  <div class="jumbotron">
+  <section class="hero">
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h1 class="display-4">Angkut Apps</h1>
-          <p class="lead">
-            This is a simple hero unit, a simple jumbotron-style component for
-            calling extra attention to featured content or information.
-          </p>
-          <a class="btn btn-success btn-lg" href="#" role="button">Contact Us</a>
+          <div class="column-text">
+            <h1 class="display-4">Angkut App</h1>
+            <h2>Aplikasi Pemesanan <span>Transportasi</span> Lintas Daerah Secara
+              <span>Cepat,
+                Mudah</span> dan <span>Aman</span>
+            </h2>
+            <a href="#" class="btn-contact">Contact Us</a>
+          </div>
         </div>
         <div class="col-6">
-          <picture>
-            <img src="img/3 phone.png" alt="" class="img-fluid" />
-          </picture>
+          <div class="column-img-illustration">
+            <img src="img/Group 536.png" alt="">
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <section class="main">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <h3>Apa Yang</h3>
-          <h2>Kami Kerjakan</h2>
+          <h1>Kami Kerjakan</h1>
           <picture>
-            <img src="img/business_conference_.svg" alt="" class="img-fluid" />
+            <img src="img/business_conference_.svg" alt="" class="img-fluid mt-md-5" />
           </picture>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <div class="keterangan">
             <p>
               <span>1</span> Lorem ipsum, dolor sit amet consectetur
@@ -116,7 +122,7 @@
   <section class="info">
     <div class="container">
       <div class="row">
-        <div class="col-8 col-lg-6">
+        <div class="col-12 col-lg-6">
           <h1>Perjalanan Angkut Apps</h1>
           <hr />
           <p>
@@ -129,7 +135,7 @@
             eius sapiente quidem tenetur velit aliquid itaque.
           </p>
         </div>
-        <div class="col-4 col-lg-6 d-flex align-items-center">
+        <div class="col-12 col-lg-6">
           <picture>
             <img src="img/world_wide_web_monochromatic.svg" alt="" class="img-fluid" />
           </picture>
@@ -213,188 +219,168 @@
           <hr />
         </div>
       </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="our-tim">
+                <img src="img/Tim/irwan.png" alt="">
+              </div>
+              <div class="info-tim">
+                <h4>Irwan Ardiansyah</h4>
+                <p>Android Developer</p>
+              </div>
+            </div>
 
-      <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12 offset-md-4 offset-sm-3">
-          <div class="single-tim">
-            <div class="img-area">
-              <img src="img/Tim/irwan.png"
-                alt="https://drive.google.com/file/d/1x1AuRAVEmBNynYa4tpzObhpEA6vjZvCq/view?usp=sharing" />
+            <div class="item">
+              <div class="our-tim">
+                <img src="img/Tim/rehan.png" alt="">
+              </div>
+              <div class="info-tim">
+                <h4>Andi Raihan</h4>
+                <p>Android Developer</p>
+              </div>
             </div>
-            <div class="text-area">
-              <h3>Irwan Ardiansyah</h3>
-              <p>Leader</p>
+
+            <div class="item">
+              <div class="our-tim">
+                <img src="img/Tim/ayu.png" alt="">
+              </div>
+              <div class="info-tim">
+                <h4>Ayu</h4>
+                <p>Android Developer</p>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="single-tim">
-            <div class="img-area">
-              <img src="img/Tim/rehan.png"
-                alt="https://drive.google.com/file/d/1gTSJUadd2KR-sxNtGbF-GH3DU0tQIGnN/view?usp=sharing" />
+
+            <div class="item">
+              <div class="our-tim">
+                <img src="img/Tim/furqan.png" alt="">
+              </div>
+              <div class="info-tim">
+                <h4>Furqan</h4>
+                <p>Android Developer</p>
+              </div>
             </div>
-            <div class="text-area">
-              <h3>Andi Raihan Arman</h3>
-              <p>Mahasiswa</p>
+
+            <div class="item">
+              <div class="our-tim">
+                <img src="img/Tim/taufik.png" alt="">
+              </div>
+              <div class="info-tim">
+                <h4>Taufik</h4>
+                <p>Android Developer</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="single-tim">
-            <div class="img-area">
-              <img src="img/Tim/ayu.png"
-                alt="https://drive.google.com/file/d/1GWp_GvdmOpMVoN4CKBsjnuhW_SEAv1Fv/view?usp=sharing" />
+
+            <div class="item">
+              <div class="our-tim">
+                <img src="img/Tim/iccank.png" alt="">
+              </div>
+              <div class="info-tim">
+                <h4>Ichsan B</h4>
+                <p>Android Developer</p>
+              </div>
             </div>
-            <div class="text-area">
-              <h3>Ayu Ramadhan</h3>
-              <p>Mahasiswa</p>
+
+            <div class="item">
+              <div class="our-tim">
+                <img src="img/Tim/asep.png" alt="">
+              </div>
+              <div class="info-tim">
+                <h4>Asep</h4>
+                <p>Android Developer</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="single-tim">
-            <div class="img-area">
-              <img src="img/Tim/furqan.png"
-                alt="https://drive.google.com/file/d/1nVK2CV4LjBDt8ihzKe4nqK0_-y0wlFmo/view?usp=sharing" />
-            </div>
-            <div class="text-area">
-              <h3>Furqan</h3>
-              <p>Mahasiswa</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="single-tim">
-            <div class="img-area">
-              <img src="img/Tim/taufik.png"
-                alt="https://drive.google.com/file/d/1nVK2CV4LjBDt8ihzKe4nqK0_-y0wlFmo/view?usp=sharing" />
-            </div>
-            <div class="text-area">
-              <h3>Taufiq</h3>
-              <p>Mahasiswa</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="single-tim">
-            <div class="img-area">
-              <img src="img/Tim/iccank.png"
-                alt="https://drive.google.com/file/d/1nVK2CV4LjBDt8ihzKe4nqK0_-y0wlFmo/view?usp=sharing" />
-            </div>
-            <div class="text-area">
-              <h3>Ichsan</h3>
-              <p>Mahasiswa</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="single-tim">
-            <div class="img-area">
-              <img src="img/Tim/asep.png"
-                alt="https://drive.google.com/file/d/1SZocVPsKz_zO8ycmpk9-1aQwmElfNJlE/view?usp=sharing" />
-            </div>
-            <div class="text-area">
-              <h3>Asep</h3>
-              <p>Mahasiswa</p>
-            </div>
+
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
         <div class="row">
-          <div class="col-12 col-md-4 col-lg-5">
-            <h1>Angkut App</h1>
+          <div class="col-12 col-md-3 mt-md-4">
+            <img src="img/logo.png" alt="" class="img-fluid" style="width: 7rem;">
             <ul class="nav-footer">
               <li class="footer-item">
-                <a href="angkutapps.artechgroup@gmail.com" class="footer-link"><i class="fas fa-envelope"></i>
-                  angkutapps@gmail.com</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-link"><i class="fas fa-map-marked-alt"></i> Jln. Samalewa,
+                <a href="#" class="footer-link"><span>Alamat :</span> Jln.
+                  Samalewa,
                   Pangkajene, Pangkep, Sulawesi Selatan 90651</a>
               </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link"><span>Telp
+                    :</span> +62 21 54313933</a>
+              </li>
+              <li class="footer-item">
+                <a href="angkutapps.artechgroup@gmail.com" class="footer-link"><span>Email
+                    :</span> angkutapps@gmail.com</a>
+              </li>
             </ul>
-            <div class="sosmed">
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="produk">
+              <h3>Produk</h3>
               <ul class="nav-footer">
-                <li class="sosmed-item">
-                  <a href="" class="sosmed-link"><i class="fab fa-instagram"></i></a>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Driver Help Center</a>
                 </li>
-                <li class="sosmed-item">
-                  <a href="" class="sosmed-link"><i class="fab fa-facebook-square"></i></a>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Investor Relation Platform</a>
                 </li>
-                <li class="sosmed-item">
-                  <a href="" class="sosmed-link"><i class="fab fa-youtube"></i></a>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Career</a>
                 </li>
-                <li class="sosmed-item">
-                  <a href="" class="sosmed-link"><i class="fab fa-twitter-square"></i></a>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Research and Development</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Pusat Media</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Peraturan dan Kebijakan Privasi</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-12 col-md-4 col-lg-3 produk">
-            <h3>Produk</h3>
-            <ul class="nav-footer">
-              <li class="footer-item">
-                <a href="" class="footer-link">Driver Help Center</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Inpestor Relation Platform</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Inpestor Relation Platform</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Career</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Research and Development</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Pusat Media</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Pusat Media</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Peraturan dan Kebijakan Privasi</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-4 col-lg-4">
-            <h3>Download Sekarang</h3>
-            <div class="penumpang">
-              <p>Penumpang</p>
+          <div class="col-12 col-md-3">
+            <div class="link-download">
+              <h3>Download Sekarang</h3>
               <picture>
-                <a href=""><img src="img/playstore.png"
-                    alt="https://www.hiclipart.com/free-transparent-background-png-clipart-balrw/download" /></a>
+                <a href="" class="d-block mb-3"><img src="img/playstore.png"
+                    alt="https://www.hiclipart.com/free-transparent-background-png-clipart-balrw/download"
+                    style="width: 15rem; height: 4rem;" /></a>
                 <a href=""><img src="img/app-store-apple.png"
-                    alt="https://favpng.com/png_view/apple-itunes-app-store-apple-logo-png/sWVYUMFj" /></a>
+                    alt="https://favpng.com/png_view/apple-itunes-app-store-apple-logo-png/sWVYUMFj"
+                    style="width: 15rem; height: 4.3rem;" /></a>
               </picture>
             </div>
-            <div class="driver">
-              <p>Driver</p>
-              <picture>
-                <a href=""><img src="img/playstore.png"
-                    alt="https://www.hiclipart.com/free-transparent-background-png-clipart-balrw/download" /></a>
-                <a href=""><img src="img/app-store-apple.png"
-                    alt="https://favpng.com/png_view/apple-itunes-app-store-apple-logo-png/sWVYUMFj" /></a>
-              </picture>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="follow-us">
+              <h3>Follow Us</h3>
+              <a href="">
+                <img src="img/Group 529.png" alt="" style="width: 3rem;">
+              </a>
+              <a href="">
+                <img src="img/Group 530.png" alt="" style="width: 3rem;">
+              </a>
+              <a href="">
+                <img src="img/Group 531.png" alt="" style="width: 3rem;">
+              </a>
+              <a href="">
+                <img src="img/Group 532.png" alt="" style="width: 3rem;">
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <hr>
-      <p class="copyrigth text-center">@Angkut Apps 2020</p>
+      <div class="footer-bottom">
+        <hr>
+        <p class="copyrigth text-center">copyrigth 2020 <span>angkut apps</span> - all rights reserved</p>
+      </div>
     </div>
   </footer>
   <!--Akhir Footer -->
@@ -402,6 +388,28 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        },
+        1200: {
+          items: 4
+        }
+      }
+    })
+  </script>
 </body>
 
 </html>

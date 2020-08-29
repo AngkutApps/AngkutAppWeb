@@ -234,6 +234,16 @@ section.testimonial {
     font-weight: 600;
 }
 
+.owl-theme .owl-dots .owl-dot {
+    outline: unset;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    margin-top: 2rem;
+    background: var(--green);
+}
+
 /* footer */
 .footer {
     position: relative;
@@ -767,9 +777,6 @@ section.testimonial {
         margin-top: 1.5rem;
         margin-bottom: 4.5rem;
     }
-
-
-
 }
 
 @media (min-width: 1200px) {

@@ -3,6 +3,7 @@
 *,
 *::before,
 *::after {
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,7 +14,6 @@
 }
 
 html {
-  font-family: "Poppins", sans-serif;
   font-size: 10px;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -43,22 +43,23 @@ section {
 
 /* nav */
 nav.navbar {
-  background: var(--green);
-}
-
-nav.navbar {
   z-index: 999;
-  width: 100%;
+  padding: .7rem 1rem !important;
 }
 
 .navbar-brand {
-  width: 70px;
+  width: 60px;
 }
 
 .nav-link {
-  color: white !important;
+  color: rgba(0, 0, 0, 0.8) !important;
   font-size: 1.2rem;
-  text-transform: uppercase;
+  font-weight: 600;
+  margin-right: 2.5rem;
+}
+
+.nav-link:hover {
+  color: var(--green) !important;
 }
 
 button.navbar-toggler {
@@ -67,33 +68,59 @@ button.navbar-toggler {
   outline: unset;
 }
 
-/* header */
-.jumbotron {
-  padding: 5rem 2rem;
-  margin-top: 13%;
-  background: #16a0841a !important;
+/* hero */
+section.hero {
+  margin-top: 2rem;
 }
 
-.jumbotron .display-4 {
-  color: var(--green);
-  font-weight: 700;
-  font-size: 3rem;
+.column-text {
+  margin-top: 2rem;
 }
 
-.jumbotron .lead {
-  font-weight: 400;
+.column-text .display-4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.column-text h2 {
+  margin-top: -0.3rem;
   font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.column-text h2 span {
+  font-weight: 550;
+}
+
+.column-text .btn-contact {
+  display: inline-block;
+  background: var(--green);
+  color: white;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  margin-top: .8rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.btn-contact:hover {
+  background: #106d5a;
+  transition: .5s;
+}
+
+.column-img-illustration img {
+  width: 100%;
+  margin-top: 1.5rem;
 }
 
 /* main */
 .main h2 {
-  color: rgba(0, 0, 0, 0.7);
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 3rem;
 }
 
 .main h3 {
-  color: rgba(0, 0, 0, 0.7);
   line-height: 0.8;
 }
 
@@ -105,6 +132,10 @@ button.navbar-toggler {
   height: 15%;
   text-align: center;
   border-radius: 20%;
+}
+
+.main .keterangan {
+  margin-top: 3rem;
 }
 
 .main p {
@@ -119,15 +150,17 @@ button.navbar-toggler {
 }
 
 .info h1 {
-  color: var(--green);
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .info hr {
-  width: 50%;
-  border: 1px solid var(--green);
+  width: 20%;
+  margin-bottom: 2rem;
+  border: 1px solid #EF8641;
 }
+
 
 .info p {
   font-size: 1.3rem;
@@ -137,15 +170,16 @@ button.navbar-toggler {
 /* kelebihan */
 .kelebihan h1 {
   text-align: center;
-  color: var(--green);
+  font-weight: 600;
+  margin-bottom: 1rem;
   font-size: 2rem;
-  font-weight: 700;
 }
 
 .kelebihan hr {
+  width: 20%;
   margin: auto;
-  width: 25%;
-  border: 1px solid var(--green);
+  margin-bottom: 2rem;
+  border: 1px solid #EF8641;
 }
 
 .info-panel {
@@ -178,53 +212,174 @@ button.navbar-toggler {
 
 .tim h1 {
   text-align: center;
-  color: var(--green);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 .tim hr {
-  width: 15%;
+  width: 20%;
   margin: auto;
-  border: 1px solid var(--green);
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  border: 1px solid #EF8641;
 }
 
-.tim .single-tim {
-  border: unset;
-  margin-top: 5rem;
+.owl-carousel .item {
+  margin-top: 4rem;
 }
 
-.tim .single-tim img {
+.item .our-tim img {
   width: 50%;
+  margin: auto;
 }
 
-.single-tim .text-area {
-  padding: 0.5rem 1rem;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-  background: white;
-  border-radius: 1rem;
-  position: absolute;
-  left: 15rem;
-  top: 5rem;
-  width: 50%;
+.item .info-tim h4 {
+  margin-top: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
-.text-area h3 {
+.item .info-tim p {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  outline: unset;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  margin-top: 2rem;
+  background: var(--green);
+}
+
+/* footer */
+.footer {
+  position: relative;
+  background: #F1F1F1;
+  padding-top: 2rem;
+}
+
+.footer-top {
+  padding-bottom: 5rem;
+}
+
+.footer-top .footer-item {
+  padding-top: .8rem
+}
+
+.footer-top .footer-link {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, .8);
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.footer-link span {
   color: var(--green);
-  font-weight: 700;
+  font-weight: 600;
 }
 
-.text-area p {
-  color: rgba(0, 0, 0, 0.7);
-  font-weight: 500;
+.footer-top h3 {
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.footer-top .link-download img {
+  margin-top: 8px;
+}
+
+.footer-top .follow-us img {
+  margin-right: 5px;
+}
+
+.footer-top .follow-us a {
+  text-decoration: none;
+}
+
+.footer .footer-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #f1f1f1;
+}
+
+.footer-bottom p {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+
+.footer-bottom span {
+  color: var(--green);
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .jumbotron {
-    margin-top: 7%;
+
+  /* hero */
+  section.hero {
+    margin-top: 4rem;
   }
 
-  .jumbotron .display-4 {
-    margin-top: 10%;
+  .column-text {
+    margin-top: 3.9rem;
+  }
+
+  .column-text .display-4 {
+    font-size: 3rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .column-text hr {
+    width: 12rem;
+    border: 1.5px solid var(--green);
+  }
+
+  .column-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .column-img-illustration img {
+    margin-top: 0rem;
+  }
+
+  /* main */
+  .main h1 {
+    font-size: 2.5rem;
+  }
+
+  /* info */
+  .info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem
+  }
+
+  .info hr {
+    width: 16%;
+    margin-bottom: 3rem;
+  }
+
+  /* kelebihan */
+  .kelebihan h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem
+  }
+
+  .kelebihan hr {
+    width: 16%;
+    margin-bottom: 3rem;
+  }
+
+  /* our tim */
+  .tim h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem
+  }
+
+  .tim hr {
+    width: 16%;
+    margin-bottom: 3rem;
   }
 
   .single-tim {
@@ -251,12 +406,86 @@ button.navbar-toggler {
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
-  .jumbotron {
-    margin-top: 6% !important;
+
+  /* navbar */
+  .navbar-brand {
+    width: 70px;
   }
 
-  .jumbotron .display-4 {
-    margin-top: 20%;
+  .nav-link {
+    font-size: 1.4rem;
+  }
+
+  /* hero */
+  section.hero {
+    margin-top: 6rem;
+  }
+
+  .column-text {
+    margin-top: 5rem;
+  }
+
+  .column-text .display-4 {
+    font-size: 3.7rem;
+    padding-bottom: 1rem;
+  }
+
+  .column-text hr {
+    width: 15rem;
+    border: 1.5px solid var(--green);
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .column-text h2 {
+    font-size: 1.7rem;
+  }
+
+  .column-img-illustration img {
+    margin-top: 0rem;
+  }
+
+  .column-text .btn-contact {
+    padding: .8rem 2rem;
+    font-size: 1.3rem;
+  }
+
+  /* main */
+  .main h1 {
+    font-size: 3rem;
+  }
+
+  /* info */
+  .info h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem
+  }
+
+  .info hr {
+    width: 16%;
+    margin-bottom: 3rem;
+  }
+
+  /* kelebihan */
+  .kelebihan h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem
+  }
+
+  .kelebihan hr {
+    width: 16%;
+    margin-bottom: 3rem;
+  }
+
+  /* our tim */
+  .tim h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem
+  }
+
+  .tim hr {
+    width: 16%;
+    margin-bottom: 3rem;
   }
 
   .single-tim {
@@ -280,146 +509,60 @@ button.navbar-toggler {
   .text-area p {
     font-size: 1.5rem;
   }
-}
 
-/* footer */
-.footer {
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-  background: #367c6d;
-  position: relative;
-  left: 0;
-  right: 0;
-}
-
-.footer h3,
-.footer h1 {
-  color: rgb(255, 255, 255);
-  font-weight: 700;
-}
-
-.footer p {
-  color: rgb(224, 224, 224);
-  font-weight: 500;
-}
-
-.footer .nav-footer {
-  color: rgb(224, 224, 224);
-}
-
-.footer-top picture {
-  display: flex;
-}
-
-.footer .footer-top img {
-  width: 15rem;
-  padding-right: 10px;
-  opacity: 0.9;
-}
-
-.footer .footer-item {
-  line-height: 3rem;
-}
-
-.nav-footer a {
-  color: rgb(224, 224, 224);
-  text-decoration: none;
-  font-size: 1.3rem;
-}
-
-.sosmed .nav-footer {
-  list-style: none;
-  display: inline-block;
-}
-
-.sosmed-item {
-  display: inline;
-  margin-right: 5px;
-}
-
-.sosmed-link {
-  border: 1px solid rgba(255, 255, 255, 1);
-  display: inline-block;
-  padding: 5px 8px;
-  border-radius: 9px;
-}
-
-.sosmed-item .fa-instagram,
-.sosmed-item .fa-facebook-square,
-.sosmed-item .fa-youtube,
-.sosmed-item .fa-twitter-square {
-  font-size: 1.6rem;
-  line-height: unset;
-}
-
-.footer-top .driver {
-  padding-top: 1rem;
-}
-
-.footer-bottom hr {
-  margin-top: 4rem;
-  width: 100%;
-  border: 1px solid rgb(211, 211, 211);
-}
-
-.footer-bottom p {
-  color: rgb(211, 211, 211);
+  /* footer */
+  .footer-bottom p {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 992px) {
+  .navbar-brand {
+    width: 80px;
+  }
+
   .nav-link {
-    margin-right: 30px;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    color: white !important;
-  }
-
-  .nav-link:hover::after {
-    content: "";
-    display: block;
-    border-bottom: 2px solid white;
-    width: 50%;
-    margin: auto;
-    padding-bottom: 5px;
-    margin-bottom: -8px;
-  }
-
-  .jumbotron {
-    padding: 1rem 2rem;
-    margin-top: 5%;
-    height: 500px;
-  }
-
-  .jumbotron .display-4 {
-    color: var(--green);
-    font-weight: 700;
-    font-size: 5rem;
-    margin-top: 20%;
-  }
-
-  .jumbotron .lead {
-    font-size: 2rem;
-  }
-
-  .jumbotron a.btn {
-    padding: 1rem 3rem;
     font-size: 1.5rem;
   }
 
-  .jumbotron img {
-    width: 80%;
-    margin-left: 7rem;
-    margin-top: 5rem;
+  /* hero */
+  .column-text {
+    margin-top: 15rem;
   }
 
-  .main h2 {
-    color: var(--green);
-    font-size: 3.5rem;
+  .column-text .display-4 {
+    font-size: 4.7rem;
+    padding-bottom: 1.5rem;
   }
+
+  .column-text hr {
+    width: 20rem;
+    border: 1.5px solid var(--green);
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .column-text h2 {
+    font-size: 2.8rem;
+  }
+
+  .column-img-illustration img {
+    margin-top: 4rem;
+  }
+
+  .column-text .btn-contact {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  /* main */
 
   .main h3 {
-    font-size: 2.7rem;
-    color: var(--green);
+    font-size: 2rem;
+  }
+
+  .main h1 {
+    font-size: 3rem;
     line-height: 1;
   }
 
@@ -481,33 +624,18 @@ button.navbar-toggler {
   }
 
   /* footer */
-  .footer h3,
-  .footer h1 {
-    font-size: 2.8rem;
-  }
-
-  .footer p {
-    font-size: 1.7rem;
-  }
-
-  .footer .footer-item {
-    line-height: 2.5rem;
-  }
-
-  .footer .footer-item:hover {
+  .footer-top .footer-item:hover {
     transform: translateX(5px);
-    transition: 0.5s;
+    transition: .6s;
   }
 
-  .nav-footer a {
-    font-size: 1.5rem;
+  .footer-item .footer-link:hover {
+    color: black;
+    transition: .3s;
   }
 
-  .sosmed-item .fa-instagram,
-  .sosmed-item .fa-facebook-square,
-  .sosmed-item .fa-youtube,
-  .sosmed-item .fa-twitter-square {
-    font-size: 2rem;
-    transform: translateY(0.1rem);
+  .footer-bottom p {
+    font-size: 1.3rem;
   }
+
 }
