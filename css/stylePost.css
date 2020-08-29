@@ -13,10 +13,13 @@
 }
 
 html {
-    font-family: "Poppins", sans-serif;
     font-size: 10px;
     box-sizing: border-box;
     overflow-x: hidden;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -43,22 +46,23 @@ section {
 
 /* nav */
 nav.navbar {
-    background: var(--green);
-}
-
-nav.navbar {
     z-index: 999;
-    width: 100%;
+    padding: .7rem 1rem !important;
 }
 
 .navbar-brand {
-    width: 70px;
+    width: 60px;
 }
 
 .nav-link {
-    color: white !important;
+    color: rgba(0, 0, 0, 0.8) !important;
     font-size: 1.2rem;
-    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 2.5rem;
+}
+
+.nav-link:hover {
+    color: var(--green) !important;
 }
 
 button.navbar-toggler {
@@ -69,14 +73,16 @@ button.navbar-toggler {
 
 /* header */
 .jumbotron.jumbotron-fluid {
-    margin-top: 15%;
+    margin-top: 22%;
     background: transparent;
 }
 
 .kategori .link-kategori {
     color: rgba(0, 0, 0, .8);
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 600;
+    margin-left: -1rem;
+    margin-right: 1.5rem;
     text-decoration: none;
 }
 
@@ -95,7 +101,7 @@ button.navbar-toggler {
 }
 
 .form-group {
-    margin-top: 2.5rem;
+    margin-top: 1.6rem;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 1rem;
 }
@@ -109,9 +115,9 @@ button.navbar-toggler {
 }
 
 .form-group .form-input {
-    padding: 6.7px;
+    padding: 6px;
     width: 25rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: rgba(0, 0, 0, .6);
     border-radius: 10px;
     background: unset;
@@ -129,10 +135,10 @@ button.navbar-toggler {
 }
 
 .search-btn .fa-search {
-    font-size: 22px;
+    font-size: 17px;
     padding-right: 5px;
     color: var(--green);
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .search-btn .fa-search:hover {
@@ -141,6 +147,7 @@ button.navbar-toggler {
 
 /* main */
 main .card-wrapper {
+    margin-top: -2rem;
     margin-bottom: 2rem;
 }
 
@@ -150,7 +157,7 @@ main .card-wrapper img {
 }
 
 main .card-wrapper a {
-    font-size: 1.9rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: rgba(0, 0, 0, .7);
     font-weight: 700;
@@ -170,11 +177,11 @@ main .card img {
 }
 
 .card .card-body a {
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-decoration: none;
     position: absolute;
     left: 50%;
-    top: 4rem;
+    top: 1rem;
     color: rgba(0, 0, 0, .7);
     font-weight: 500;
 }
@@ -191,7 +198,7 @@ main .card img {
     position: absolute;
     bottom: 0;
     right: 0;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .card-wrapper .card-footer {
@@ -200,7 +207,7 @@ main .card img {
 }
 
 .card-wrapper .text-muted {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .pagination {
@@ -230,6 +237,66 @@ main .card img {
     font-size: 1.5rem;
     color: rgba(0, 0, 0, .7);
     font-weight: 700;
+}
+
+/* footer */
+.footer {
+    position: relative;
+    background: #F1F1F1;
+    padding-top: 2rem;
+}
+
+.footer-top {
+    padding-bottom: 5rem;
+}
+
+.footer-top .footer-item {
+    padding-top: .8rem
+}
+
+.footer-top .footer-link {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, .8);
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.footer-link span {
+    color: var(--green);
+    font-weight: 600;
+}
+
+.footer-top h3 {
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+.footer-top .link-download img {
+    margin-top: 8px;
+}
+
+.footer-top .follow-us img {
+    margin-right: 5px;
+}
+
+.footer-top .follow-us a {
+    text-decoration: none;
+}
+
+.footer .footer-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #f1f1f1;
+}
+
+.footer-bottom p {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+
+.footer-bottom span {
+    color: var(--green);
 }
 
 @media (min-width: 320px) and (max-width: 450px) {
@@ -270,137 +337,117 @@ main .card img {
 
     .card .card-body a {
         font-size: 1.1rem;
-        top: 0;
+        top: 15px;
+    }
+
+    /* footer */
+    .card .text-muted {
+        font-size: 1rem;
     }
 }
 
-
-/* footer */
-.footer {
-    padding-top: 3rem;
-    padding-bottom: 1rem;
-    background: #367c6d;
-    position: relative;
-    left: 0;
-    right: 0;
-}
-
-.footer h3,
-.footer h1 {
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-}
-
-.footer p {
-    color: rgb(224, 224, 224);
-    font-weight: 500;
-}
-
-.footer .nav-footer {
-    color: rgb(224, 224, 224);
-}
-
-.footer-top picture {
-    display: flex;
-}
-
-.footer .footer-top img {
-    width: 15rem;
-    padding-right: 10px;
-    opacity: 0.9;
-}
-
-.footer .footer-item {
-    line-height: 3rem;
-}
-
-.nav-footer a {
-    color: rgb(224, 224, 224);
-    text-decoration: none;
-    font-size: 1.3rem;
-}
-
-.sosmed .nav-footer {
-    list-style: none;
-    display: inline-block;
-}
-
-.sosmed-item {
-    display: inline;
-    margin-right: 5px;
-}
-
-.sosmed-link {
-    border: 1px solid rgba(255, 255, 255, 1);
-    display: inline-block;
-    padding: 5px 8px;
-    border-radius: 9px;
-}
-
-.sosmed-item .fa-instagram,
-.sosmed-item .fa-facebook-square,
-.sosmed-item .fa-youtube,
-.sosmed-item .fa-twitter-square {
-    font-size: 1.6rem;
-    line-height: unset;
-}
-
-.footer-top .driver {
-    padding-top: 1rem;
-}
-
-.footer-bottom hr {
-    margin-top: 4rem;
-    width: 100%;
-    border: 1px solid rgb(211, 211, 211);
-}
-
-.footer-bottom p {
-    color: rgb(211, 211, 211);
-}
-
-@media (min-width: 768px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
     .jumbotron.jumbotron-fluid {
-        margin-top: 7.5%;
+        margin-top: 9%;
+        background: transparent;
+    }
+
+    .kategori .link-kategori {
+        font-size: 1.5rem;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     main .card-wrapper a {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
-    .card-wrapper .text-muted {
-        font-size: 2rem;
-    }
 
     .card .card-body a {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        top: 3rem;
     }
 
     .card .text-muted {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        width: 70px;
+    }
+
+    .nav-link {
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    button.navbar-toggler {
         font-size: 1.8rem;
+    }
+
+    .jumbotron.jumbotron-fluid {
+        margin-top: 8%;
+    }
+
+    .form-group .form-input {
+        padding: 10px;
+        width: 30rem;
+        font-size: 1.3rem;
+        padding-left: 1.7rem;
+    }
+
+    .search-btn .fa-search {
+        font-size: 20px;
+        padding-right: 10px;
+    }
+
+    .kategori .link-kategori {
+        font-size: 1.5rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    main .card-wrapper a {
+        font-size: 2rem;
+    }
+
+    .card-wrapper .text-muted {
+        font-size: 1.5rem;
+    }
+
+    .card .card-body a {
+        font-size: 1.7rem;
+        top: 2rem;
+    }
+
+    .card .text-muted {
+        font-size: 1.3rem;
+    }
+
+    /* footer */
+    .footer-bottom p {
+        font-size: 1.2rem;
     }
 }
 
 @media (min-width: 992px) {
-    .nav-link {
-        margin-right: 30px;
-        font-size: 1.4rem;
-        color: white !important;
+    .navbar-brand {
+        width: 80px;
     }
 
-    .nav-link:hover::after {
-        content: "";
-        display: block;
-        border-bottom: 2px solid white;
-        width: 50%;
-        margin: auto;
-        padding-bottom: 5px;
-        margin-bottom: -8px;
+    .nav-link {
+        font-size: 1.5rem;
     }
 
     /* header */
     .jumbotron.jumbotron-fluid {
-        margin-top: 5%;
+        margin-top: 6%;
     }
 
     .kategori .link-kategori {
@@ -442,80 +489,17 @@ main .card img {
     }
 
     /* footer */
-    footer.footer {
-        padding: 3rem 0 1rem 0;
-        background: #367c6d;
-    }
-
-    .footer h3,
-    .footer h1 {
-        color: rgb(255, 255, 255);
-        font-weight: 700;
-        font-size: 2.8rem;
-    }
-
-    .footer p {
-        color: rgb(224, 224, 224);
-        font-weight: 500;
-        font-size: 1.7rem;
-    }
-
-    .footer .nav-footer {
-        color: rgb(224, 224, 224);
-    }
-
-    .footer .footer-top img {
-        width: 15rem;
-        padding-right: 10px;
-        opacity: 0.9;
-    }
-
-    .footer .footer-item {
-        line-height: 2.5rem;
-    }
-
-    .footer .footer-item:hover {
+    .footer-top .footer-item:hover {
         transform: translateX(5px);
-        transition: 0.5s;
+        transition: .6s;
     }
 
-    .nav-footer a {
-        color: rgb(224, 224, 224);
-        text-decoration: none;
-        font-size: 1.5rem;
-    }
-
-    .sosmed .nav-footer {
-        list-style: none;
-        display: inline-block;
-    }
-
-    .sosmed-item {
-        display: inline;
-        margin-right: 5px;
-    }
-
-    .sosmed-link {
-        border: 1px solid rgba(255, 255, 255, 1);
-        display: inline-block;
-        padding: 5px 8px;
-        border-radius: 9px;
-    }
-
-    .sosmed-item .fa-instagram,
-    .sosmed-item .fa-facebook-square,
-    .sosmed-item .fa-youtube,
-    .sosmed-item .fa-twitter-square {
-        font-size: 2rem;
-        line-height: unset;
-        transform: translateY(2px);
-    }
-
-    .footer-top .driver {
-        padding-top: 10px;
+    .footer-item .footer-link:hover {
+        color: black;
+        transition: .3s;
     }
 
     .footer-bottom p {
-        color: rgb(211, 211, 211);
+        font-size: 1.3rem;
     }
 }
