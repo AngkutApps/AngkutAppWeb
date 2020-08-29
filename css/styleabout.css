@@ -71,6 +71,14 @@ button.navbar-toggler {
   outline: unset;
 }
 
+.navbar .fa-angle-down {
+  margin-left: .6rem;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  font-size: 1.2rem;
+}
+
 /* hero */
 section.hero {
   margin-top: 2rem;
