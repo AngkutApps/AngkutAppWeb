@@ -47,8 +47,16 @@
           <li class="nav-item">
             <a class="nav-link" href="post.html">Berita & Artikel</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="daftar.html">Daftar</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Daftar<i class="fas fa-angle-down"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="daftar-pete-pete.html">Mobil Pete-pete</a>
+              <a class="dropdown-item" href="daftar-mobil-travel.html">Mobil Daerah / Travel</a>
+              <a class="dropdown-item" href="daftar-bus.html">Mobil Bus</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="hlmnBantuan.html">Pusat Bantuan</a>
@@ -64,7 +72,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="kategori d-flex justify-content-between">
+          <!-- <div class="kategori d-flex justify-content-between">
             <a href="#" class="link-kategori">All</a>
             <a href="#" class="link-kategori">Community</a>
             <a href="#" class="link-kategori">Driver</a>
@@ -73,17 +81,32 @@
             <a href="#" class="link-kategori">Article</a>
             <a href="#" class="link-kategori">Passenger</a>
           </div>
+        </div> -->
+          <h1 class="text-heading text-center">Berita & Artikel</h1>
+          <hr>
+          <p class="text-center text-p">Yuk baca berita dan artikel terkait pengalaman<br>para penumpang dan driver
+            Angkut Apps
+          </p>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-          <form class="form-inline justify-content-end">
+          <form class="form-inline justify-content-center">
             <div class="form-group">
               <input class="form-input" type="cari" placeholder="Search Disini" aria-label="cari" />
               <button type="submit" class="search-btn">
                 <i class="fas fa-search"></i>
               </button>
             </div>
+            <select class="group-kategori" name="" id="">
+              <option selected>Semua Kategori</option>
+              <option value="">Community</option>
+              <option value="">Driver</option>
+              <option value="">Event</option>
+              <option value="">Technology</option>
+              <option value="">Article</option>
+              <option value="">Passenger</option>
+            </select>
           </form>
         </div>
       </div>
