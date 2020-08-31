@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow p-2 mb-5 bg-white">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="img/logo.png" alt="" />
@@ -34,7 +34,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav m-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Beranda</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">Tentang Kami</a>
@@ -45,8 +45,16 @@
           <li class="nav-item">
             <a class="nav-link" href="post.html">Berita & Artikel</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="daftar.html">Daftar</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Daftar<i class="fas fa-angle-down"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="daftar-pete-pete.html">Mobil Pete-pete</a>
+              <a class="dropdown-item" href="daftar-mobil-travel.html">Mobil Daerah / Travel</a>
+              <a class="dropdown-item" href="daftar-bus.html">Mobil Bus</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="hlmnBantuan.html">Pusat Bantuan</a>
@@ -58,38 +66,39 @@
 
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-4">
-        Lorem ipsum <span>dolor</span> sit <br />amet consectetur
-        <span>adipisicing</span> elit.
+      <h1 class="text-heading" class="display-4">
+        Angkut Apps Mobil Daerah
       </h1>
+      <p class="text-p">Hadir untuk menjadi pelengkap bagi aktivitas/pekerjaan anda yang cepat dan mudah.</p>
+      <p class="text-p">Bebas mengatur Waktu, Tidak ada Sanksi, Ramah Pengguna, Mudah dan Cepat Mencari Penumpang.</p>
     </div>
   </div>
 
   <div class="container">
     <div class="row d-flex justify-content-center">
-      <div class="col-10 info-panel">
-        <div class="row">
-          <div class="col-lg penghasilan">
+      <div class="col-10 info-panel shadow">
+        <div class="row text-center">
+          <div class="col-lg">
             <picture>
-              <img src="img/dollar.png" alt="" />
-            </picture>
-            <p>Penghasilan Tambahan</p>
-          </div>
-          <div class="col-lg waktu">
-            <picture>
-              <img src="img/waktu.png" alt="" />
+              <img src="img/pusat-bantuan/Group 519.png" alt="" />
             </picture>
             <p>Bebas Mengatur Waktu</p>
           </div>
-          <div class="col-lg loading">
+          <div class="col-lg">
             <picture>
-              <img src="img/loading.png" alt="" />
+              <img src="img/pusat-bantuan/Group 640.png" alt="" />
             </picture>
             <p>Tidak Ada Punishment</p>
           </div>
-          <div class="col-lg panah">
+          <div class="col-lg">
             <picture>
-              <img src="img/panah.png" alt="" />
+              <img src="img/pusat-bantuan/calvary.png" alt="" />
+            </picture>
+            <p>Penghasilan Tambahan</p>
+          </div>
+          <div class="col-lg friendly">
+            <picture>
+              <img src="img/pusat-bantuan/high-five.png" alt="" />
             </picture>
             <p>Friendly Support</p>
           </div>
@@ -101,31 +110,13 @@
   <section class="daftar">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h2>Cara Daftar</h2>
-          <h5>Offline</h5>
-          <div class="cara-daftar">
-            <picture>
-              <img src="img/handphone.png" alt="" />
-            </picture>
-            <div class="petunjuk">
-              <p><span>1</span> Datangi kantor setempat</p>
-              <p>
-                <span>2</span> Tanyakan ke CS ingin mendaftar driver dan
-                siapkan photo kendaraan
-              </p>
-              <p><span>3</span> Isi data berdasarkan form yang diberikan</p>
-              <p>
-                <span>4</span> Ikuti setiap instruksi dan mengikuti rapid
-                training dari pihak training
-              </p>
-              <p><span>5</span> sudah selesai, akun akan langsung aktif</p>
-            </div>
-          </div>
+        <div class="col-12 col-md-6 d-flex align-items-center">
+          <img src="img/pusat-bantuan/undraw_online_articles_79ff.png" alt="">
         </div>
-        <div class="col-md-5 offset-1">
+        <div class="col-12 col-md-6">
           <div class="form-daftar">
-            <h2>Daftar Sekarang</h2>
+            <h2>Daftar Driver</h2>
+            <p>Daftarkan diri kamu dan nikmati fitur yang tersedia</p>
             <form action="" method="post">
               <div class="form-group">
                 <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap" autocomplete="off"
@@ -157,7 +148,7 @@
                 <input type="text" class="form-control" name="question" placeholder="Input disini" autocomplete="off"
                   required />
                 <button type="submit" class="btn-succes">
-                  Video Call Now Untuk Konfirmasi
+                  Buat Akun
                 </button>
               </div>
             </form>
@@ -172,31 +163,34 @@
       <div class="row">
         <div class="col-12">
           <h1>Download Angkut Apps Driver Sekarang</h1>
+          <hr>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 offset-1">
+        <div class="col-12 col-md-6 offset-md-1">
           <div class="barcode">
-            <picture>
-              <img src="img/qr code.png" alt="" class="img-fluid" />
-              <p class="android">Android</p>
-            </picture>
-            <picture>
-              <img src="img/qr code.png" alt="" class="img-fluid" />
-              <p class="ios">IOS</p>
-            </picture>
+            <div class="barcode-android">
+              <img src="img/qr code.png" alt="" />
+              <p>Android</p>
+            </div>
+            <div class="barcode-ios">
+              <img src="img/qr code.png" alt="" />
+              <p>IOS</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4 offset-2">
-          <div class="mobile">
-            <picture>
+        <div class="col-12 col-md-4">
+          <div class="app-store">
+            <div class="android-store">
               <a href="#">
                 <img src="img/playstore.png" alt="" class="img-fluid" />
               </a>
+            </div>
+            <div class="ios-store">
               <a href="#">
                 <img src="img/app-store-apple.png" alt="" class="img-fluid" />
               </a>
-            </picture>
+            </div>
           </div>
         </div>
       </div>
@@ -208,91 +202,85 @@
     <div class="container">
       <div class="footer-top">
         <div class="row">
-          <div class="col-12 col-md-4 col-lg-5">
-            <h1>Angkut App</h1>
+          <div class="col-12 col-md-3 mt-md-4">
+            <img src="img/logo.png" alt="" class="img-fluid" style="width: 7rem;">
             <ul class="nav-footer">
               <li class="footer-item">
-                <a href="angkutapps.artechgroup@gmail.com" class="footer-link"><i class="fas fa-envelope"></i>
-                  angkutapps@gmail.com</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-link"><i class="fas fa-map-marked-alt"></i> Jln. Samalewa,
+                <a href="#" class="footer-link"><span>Alamat :</span> Jln.
+                  Samalewa,
                   Pangkajene, Pangkep, Sulawesi Selatan 90651</a>
               </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link"><span>Telp
+                    :</span> +62 21 54313933</a>
+              </li>
+              <li class="footer-item">
+                <a href="angkutapps.artechgroup@gmail.com" class="footer-link"><span>Email
+                    :</span> angkutapps@gmail.com</a>
+              </li>
             </ul>
-            <div class="sosmed">
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="produk">
+              <h3>Produk</h3>
               <ul class="nav-footer">
-                <li class="sosmed-item">
-                  <a href="" class="sosmed-link"><i class="fab fa-instagram"></i></a>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Driver Help Center</a>
                 </li>
-                <li class="sosmed-item">
-                  <a href="" class="sosmed-link"><i class="fab fa-facebook-square"></i></a>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Investor Relation Platform</a>
                 </li>
-                <li class="sosmed-item">
-                  <a href="" class="sosmed-link"><i class="fab fa-youtube"></i></a>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Career</a>
                 </li>
-                <li class="sosmed-item">
-                  <a href="" class="sosmed-link"><i class="fab fa-twitter-square"></i></a>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Research and Development</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Pusat Media</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Peraturan dan Kebijakan Privasi</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-12 col-md-4 col-lg-3 produk">
-            <h3>Produk</h3>
-            <ul class="nav-footer">
-              <li class="footer-item">
-                <a href="" class="footer-link">Driver Help Center</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Inpestor Relation Platform</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Inpestor Relation Platform</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Career</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Research and Development</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Pusat Media</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Pusat Media</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Peraturan dan Kebijakan Privasi</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-4 col-lg-4">
-            <h3>Download Sekarang</h3>
-            <div class="penumpang">
-              <p>Penumpang</p>
+          <div class="col-12 col-md-3">
+            <div class="link-download">
+              <h3>Download Sekarang</h3>
               <picture>
-                <a href=""><img src="img/playstore.png"
-                    alt="https://www.hiclipart.com/free-transparent-background-png-clipart-balrw/download" /></a>
+                <a href="" class="d-block mb-3"><img src="img/playstore.png"
+                    alt="https://www.hiclipart.com/free-transparent-background-png-clipart-balrw/download"
+                    style="width: 15rem; height: 4rem;" /></a>
                 <a href=""><img src="img/app-store-apple.png"
-                    alt="https://favpng.com/png_view/apple-itunes-app-store-apple-logo-png/sWVYUMFj" /></a>
+                    alt="https://favpng.com/png_view/apple-itunes-app-store-apple-logo-png/sWVYUMFj"
+                    style="width: 15rem; height: 4.3rem;" /></a>
               </picture>
             </div>
-            <div class="driver">
-              <p>Driver</p>
-              <picture>
-                <a href=""><img src="img/playstore.png"
-                    alt="https://www.hiclipart.com/free-transparent-background-png-clipart-balrw/download" /></a>
-                <a href=""><img src="img/app-store-apple.png"
-                    alt="https://favpng.com/png_view/apple-itunes-app-store-apple-logo-png/sWVYUMFj" /></a>
-              </picture>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="follow-us">
+              <h3>Follow Us</h3>
+              <a href="">
+                <img src="img/Group 529.png" alt="" style="width: 3rem;">
+              </a>
+              <a href="">
+                <img src="img/Group 530.png" alt="" style="width: 3rem;">
+              </a>
+              <a href="">
+                <img src="img/Group 531.png" alt="" style="width: 3rem;">
+              </a>
+              <a href="">
+                <img src="img/Group 532.png" alt="" style="width: 3rem;">
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <hr>
-      <p class="copyrigth text-center">@Angkut Apps 2020</p>
+      <div class="footer-bottom">
+        <hr>
+        <p class="copyrigth text-center">copyrigth 2020 <span>angkut apps</span> - all rights reserved</p>
+      </div>
     </div>
   </footer>
   <!-- Akhir Footer -->
@@ -300,7 +288,6 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
 </body>
 
 </html>

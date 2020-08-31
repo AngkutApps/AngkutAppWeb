@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css" />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/styleDaftar.css" />
+
+    <title>Daftar</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow p-2 mb-5 bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="layanan.html">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="post.html">Berita & Artikel</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Daftar<i class="fas fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="daftar-pete-pete.html">Mobil Pete-pete</a>
+                            <a class="dropdown-item" href="daftar-mobil-travel.html">Mobil Daerah / Travel</a>
+                            <a class="dropdown-item" href="daftar-bus.html">Mobil Bus</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hlmnBantuan.html">Pusat Bantuan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="text-heading" class="display-4">
+                Angkut Apps Pete-Pete
+            </h1>
+            <p class="text-p">Angkutan Umum Anda Khas Kearifan Lokal Jadi Lebih Millenial.</p>
+            <p class="text-p">Bebas Mengatur Waktu, Tidak ada Sanksi, Ramah Pengguna, Mudah dan Cepat Mencari Penumpang.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-10 info-panel shadow">
+                <div class="row text-center">
+                    <div class="col-lg">
+                        <picture>
+                            <img src="img/pusat-bantuan/Group 519.png" alt="" />
+                        </picture>
+                        <p>Bebas Mengatur Waktu</p>
+                    </div>
+                    <div class="col-lg">
+                        <picture>
+                            <img src="img/pusat-bantuan/Group 640.png" alt="" />
+                        </picture>
+                        <p>Tidak Ada Punishment</p>
+                    </div>
+                    <div class="col-lg">
+                        <picture>
+                            <img src="img/pusat-bantuan/calvary.png" alt="" />
+                        </picture>
+                        <p>Penghasilan Tambahan</p>
+                    </div>
+                    <div class="col-lg friendly">
+                        <picture>
+                            <img src="img/pusat-bantuan/high-five.png" alt="" />
+                        </picture>
+                        <p>Friendly Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="daftar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                    <img src="img/pusat-bantuan/undraw_online_articles_79ff.png" alt="">
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-daftar">
+                        <h2>Daftar Driver</h2>
+                        <p>Daftarkan diri kamu dan nikmati fitur yang tersedia</p>
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap"
+                                    autocomplete="off" required /><input type="text" class="form-control" name="kota"
+                                    placeholder="Kab / Kota Domisili" autocomplete="off" required />
+                                <input type="telp" class="form-control" name="hp" placeholder="Nomor Hp"
+                                    autocomplete="off" required />
+                                <input type="email" class="form-control" name="email" placeholder="Email"
+                                    autocomplete="off" required />
+                                <input type="password" class="form-control" name="pass" placeholder="Password"
+                                    autocomplete="off" required />
+                                <input type="pass" class="form-control" name="konfirm pass"
+                                    placeholder="Konfirmasi Password" autocomplete="off" required />
+                                <input type="text" class="form-control" name="nik" placeholder="NIK KTP"
+                                    autocomplete="off" required />
+                                <label for="">Identitas Kendaraan</label>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Nomor Plat/DD"
+                                            autocomplete="off" required />
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Merk Mobil / Kendaraan"
+                                            autocomplete="off" required />
+                                    </div>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                        aria-describedby="inputGroupFileAddon01" />
+                                    <label class="custom-file-label" for="inputGroupFile01">Foto Kendaraan</label>
+                                </div>
+                                <label for="question">Darimana Kamu Mengetahui Kami ?</label>
+                                <input type="text" class="form-control" name="question" placeholder="Input disini"
+                                    autocomplete="off" required />
+                                <button type="submit" class="btn-succes">
+                                    Buat Akun
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Download Angkut Apps Driver Sekarang</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 offset-md-1">
+                    <div class="barcode">
+                        <div class="barcode-android">
+                            <img src="img/qr code.png" alt="" />
+                            <p>Android</p>
+                        </div>
+                        <div class="barcode-ios">
+                            <img src="img/qr code.png" alt="" />
+                            <p>IOS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="app-store">
+                        <div class="android-store">
+                            <a href="#">
+                                <img src="img/playstore.png" alt="" class="img-fluid" />
+                            </a>
+                        </div>
+                        <div class="ios-store">
+                            <a href="#">
+                                <img src="img/app-store-apple.png" alt="" class="img-fluid" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-12 col-md-3 mt-md-4">
+                        <img src="img/logo.png" alt="" class="img-fluid" style="width: 7rem;">
+                        <ul class="nav-footer">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link"><span>Alamat :</span> Jln.
+                                    Samalewa,
+                                    Pangkajene, Pangkep, Sulawesi Selatan 90651</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link"><span>Telp
+                                        :</span> +62 21 54313933</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="angkutapps.artechgroup@gmail.com" class="footer-link"><span>Email
+                                        :</span> angkutapps@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="produk">
+                            <h3>Produk</h3>
+                            <ul class="nav-footer">
+                                <li class="footer-item">
+                                    <a href="" class="footer-link">Driver Help Center</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-link">Investor Relation Platform</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-link">Career</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-link">Research and Development</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-link">Pusat Media</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-link">Peraturan dan Kebijakan Privasi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="link-download">
+                            <h3>Download Sekarang</h3>
+                            <picture>
+                                <a href="" class="d-block mb-3"><img src="img/playstore.png"
+                                        alt="https://www.hiclipart.com/free-transparent-background-png-clipart-balrw/download"
+                                        style="width: 15rem; height: 4rem;" /></a>
+                                <a href=""><img src="img/app-store-apple.png"
+                                        alt="https://favpng.com/png_view/apple-itunes-app-store-apple-logo-png/sWVYUMFj"
+                                        style="width: 15rem; height: 4.3rem;" /></a>
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="follow-us">
+                            <h3>Follow Us</h3>
+                            <a href="">
+                                <img src="img/Group 529.png" alt="" style="width: 3rem;">
+                            </a>
+                            <a href="">
+                                <img src="img/Group 530.png" alt="" style="width: 3rem;">
+                            </a>
+                            <a href="">
+                                <img src="img/Group 531.png" alt="" style="width: 3rem;">
+                            </a>
+                            <a href="">
+                                <img src="img/Group 532.png" alt="" style="width: 3rem;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <hr>
+                <p class="copyrigth text-center">copyrigth 2020 <span>angkut apps</span> - all rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
