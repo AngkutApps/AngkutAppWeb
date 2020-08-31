@@ -576,8 +576,9 @@ button.navbar-toggler {
   }
 
   .features .tab-content .info-panel img {
-    width: 65px;
+    width: 5rem;
     left: 0rem;
+    top: .1rem;
   }
 
   .features .tab-content .info-panel .text-info {
@@ -696,13 +697,13 @@ button.navbar-toggler {
   }
 
   .features .tab-content .info-panel img {
-    width: 18%;
+    width: 5.2rem;
     position: absolute;
     top: .5rem;
   }
 
   .features .tab-content .info-panel .text-info {
-    margin-left: 7rem;
+    margin-left: 8rem;
   }
 
   .features .tab-content .info-panel .text-info h2 {
@@ -832,7 +833,7 @@ button.navbar-toggler {
   }
 
   .features .tab-content .info-panel img {
-    width: 12%;
+    width: 5.4rem;
     position: absolute;
     top: .5rem;
   }
@@ -989,9 +990,9 @@ button.navbar-toggler {
   }
 
   .features .tab-content .info-panel img {
-    width: 12%;
+    width: 5rem;
     position: absolute;
-    top: .5rem;
+    top: 0;
   }
 
   .features .tab-content .info-panel .text-info {
