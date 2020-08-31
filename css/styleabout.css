@@ -234,9 +234,9 @@ section.hero {
 }
 
 .tim hr {
-  width: 20%;
+  width: 6rem;
   margin: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border: 1px solid #EF8641;
 }
 
@@ -245,7 +245,7 @@ section.hero {
 }
 
 .item .our-tim img {
-  width: 50%;
+  width: 14rem;
   margin: auto;
 }
 
