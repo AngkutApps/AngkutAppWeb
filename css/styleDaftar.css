@@ -127,7 +127,42 @@ button.navbar-toggler {
   margin-top: 1.8rem;
 }
 
+/* cara daftar */
+section.cara-daftar {
+  margin-top: 5rem;
+}
+
+.daftar ul>li {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.cara-daftar .daftar span {
+  background: var(--green);
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -.3rem;
+}
+
+.cara-daftar .daftar p {
+  margin-left: 4.3rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+
 /* form daftar */
+.daftar {
+  margin-top: -1.5rem;
+}
+
 .form-daftar {
   border: 1px solid rgba(0, 0, 0, .1);
   padding: 20px;
