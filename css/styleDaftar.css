@@ -91,14 +91,13 @@ button.navbar-toggler {
 
 .jumbotron .text-heading {
   color: white;
-  font-weight: 600;
-  margin-top: 3rem;
+  font-weight: 300;
+  margin-top: 6rem;
+  text-align: center;
 }
 
-.jumbotron .text-p {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 300;
+.jumbotron .text-heading span {
+  font-weight: 500;
 }
 
 .jumbotron .container {
@@ -332,14 +331,8 @@ input[type="number"]:focus,
 
   .jumbotron .text-heading {
     color: white;
-    font-weight: 600;
-    margin-top: 8rem;
+    margin-top: 11rem;
     font-size: 4rem;
-  }
-
-  .jumbotron .text-p {
-    color: white;
-    font-size: 2rem;
   }
 
   /* info-panel */
@@ -406,15 +399,9 @@ input[type="number"]:focus,
 
   .jumbotron .text-heading {
     color: white;
-    font-weight: 600;
-    margin-top: 8rem;
+    margin-top: 11rem;
     font-size: 5rem;
     margin-bottom: 2rem;
-  }
-
-  .jumbotron .text-p {
-    color: white;
-    font-size: 2.5rem;
   }
 
   /*   info-panel */

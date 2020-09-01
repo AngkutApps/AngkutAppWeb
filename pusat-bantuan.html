@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Bantuan</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css" />
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/stylePusatBantuan.css" />
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow p-2 mb-5 bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="layanan.html">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="post.html">Berita & Artikel</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Daftar<i class="fas fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="daftar-pete-pete.html">Mobil Pete-pete</a>
+                            <a class="dropdown-item" href="daftar-mobil-travel.html">Mobil Daerah / Travel</a>
+                            <a class="dropdown-item" href="daftar-bus.html">Mobil Bus</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hlmnBantuan.html">Pusat Bantuan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Bagaimana kami bisa membantu anda ?</h1>
+            <hr>
+            <form class="form-inline">
+                <div class="form-group">
+                    <input class="form-input" type="cari" placeholder="Cari berita disini . . ." aria-label="cari">
+                    <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <p class="lead">Paling sering dicari : <a href="#">pesan driver</a></p>
+        </div>
+    </div>
+
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">Paling sering dicari</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/img1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-text">Penumpang yang memberikan titik lokasi penjemputan dan
+                                pengantaran yang sangat sepi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/pusat-bantuan/illustrasi-form.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="" class="card-text">Mengapa peta/Maps diaplikasi saya tidak sesuai dengan lokasi
+                                kendaraan saya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/pusat-bantuan/illustrasi-isulainnya.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-text">Barang saya tertinggal</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/pusat-bantuan/personal_data__monochromatic.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-text">Saya tidak bisa login ke akun saya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-panel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 offset-md-1 d-flex align-items-center">
+                    <img src="img/pusat-bantuan/illustrasi-form.png" alt="">
+                </div>
+                <div class="col-md-5 offset-md-1">
+                    <div class="isu">
+                        <h2>Isu Lainnya</h2>
+                        <ul>
+                            <li>Mobil driver saya tiba-tiba rusak dalam perjalanan</li>
+                            <li>Kondisi kendaraan driver tidak layak</li>
+                            <li>Saya sangat sulit mendapatkan mitra pengemudi</li>
+                            <li>Saya tidak dijemput dan diantar ke lokasi sesuai titik yang saya arahkan</li>
+                            <li>Apa yang boleh dan tidak boleh dilakukan selama beraktivitas jasa tranportasi lintas
+                                daerah
+                                melalui pemesanan Angkut Apps</li>
+                            <li>Penumpang fiktif yang berbahaya dan patut dicurigai</li>
+                            <li>Driver memberikan pelayanan yang kurang baik</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="helper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-helper">
+                        <h2>Bantuan Personal</h2>
+                        <p>Masukkan pertanyaan dan saran terhadap aplikasi ini</p>
+                        <form action="" method="POST">
+                            <div class="form-group">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="telp" placeholder="Nomor telepon">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" id="" cols="30" rows="5" placeholder="Pesan anda"></textarea>
+                            </div>
+                            <button type="submit" class="btn-kirim">Kirim</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <img src="img/pusat-bantuan/illustrasi-isulainnya.png" alt="" class="img-ilustrasi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-penumpang">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-md-5">
+                    <h2 class="text-center">FAQ Penumpang</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8 mx-auto">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Bagaimana cara mendapatkan akun angkut apps ?
+                                        <i class="fas fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Akun saya tidak bisa login ?
+                                        <i class="fas fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Apa ciri-ciri order fiktif ?
+                                        <i class="fas fa-angle-down"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-driver">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">FAQ Driver</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                        <li class="nav-item bg-transparent" role="presentation">
+                            <a class="nav-link active" id="pills-faqPetePete-tab" data-toggle="pill"
+                                href="#pills-faqPetePete" role="tab" aria-controls="pills-faqPetePete"
+                                aria-selected="true">Pete-Pete</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-faqBus-tab" data-toggle="pill" href="#pills-faqBus" role="tab"
+                                aria-controls="pills-faqBus" aria-selected="false">Mobil Bus</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-faqTravel-tab" data-toggle="pill" href="#pills-faqTravel"
+                                role="tab" aria-controls="pills-faqTravel" aria-selected="false">Mobil Travel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-faqPetePete" role="tabpanel"
+                            aria-labelledby="pills-faqPetePete-tab">
+                            <div class="accordion" id="faqDriver">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left" type="button"
+                                                data-toggle="collapse" data-target="#faqOne" aria-expanded="true"
+                                                aria-controls="faqOne">
+                                                Bagaimana cara mendapatkan akun angkut apps ?
+                                                <i class="fas fa-angle-down"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="faqOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#faqDriver">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor, sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch et.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#faqTwo" aria-expanded="false"
+                                                aria-controls="faqTwo">
+                                                Akun saya tidak bisa login ?
+                                                <i class="fas fa-angle-down"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="faqTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#faqDriver">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor, sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch et.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#faqThree" aria-expanded="false"
+                                                aria-controls="faqThree">
+                                                Apa ciri-ciri order fiktif ?
+                                                <i class="fas fa-angle-down"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="faqThree" class="collapse" aria-labelledby="headingThree"
+                                        data-parent="#faqDriver">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor, sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch et.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-faqBus" role=" tabpanel"
+                            aria-labelledby="pills-faqBus-tab">
+                            <div class="accordion" id="faqDriver">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left" type="button"
+                                                data-toggle="collapse" data-target="#faqOne" aria-expanded="true"
+                                                aria-controls="faqOne">
+                                                Bagaimana cara mendapatkan akun angkut apps ?
+                                                <i class="fas fa-angle-down"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="faqOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#faqDriver">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor, sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch et.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#faqTwo" aria-expanded="false"
+                                                aria-controls="faqTwo">
+                                                Akun saya tidak bisa login ?
+                                                <i class="fas fa-angle-down"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="faqTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#faqDriver">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor, sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch et.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#faqThree" aria-expanded="false"
+                                                aria-controls="faqThree">
+                                                Apa ciri-ciri order fiktif ?
+                                                <i class="fas fa-angle-down"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="faqThree" class="collapse" aria-labelledby="headingThree"
+                                        data-parent="#faqDriver">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor, sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch et.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-faqTravel" role="tabpanel"
+                            aria-labelledby="pills-faqTravel-tab">
+                            <div class="accordion" id="faqDriver">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left" type="button"
+                                                data-toggle="collapse" data-target="#faqOne" aria-expanded="true"
+                                                aria-controls="faqOne">
+                                                Bagaimana cara mendapatkan akun angkut ?
+                                                <i class="fas fa-angle-down"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="faqOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#faqDriver">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor, sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch et.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#faqTwo" aria-expanded="false"
+                                                aria-controls="faqTwo">
+                                                Akun saya tidak bisa login ?
+                                                <i class="fas fa-angle-down"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="faqTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#faqDriver">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor, sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch et.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#faqThree" aria-expanded="false"
+                                                aria-controls="faqThree">
+                                                Apa ciri-ciri order fiktif ?
+                                                <i class="fas fa-angle-down"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="faqThree" class="collapse" aria-labelledby="headingThree"
+                                        data-parent="#faqDriver">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor, sunt
+                                            aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch et.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-12 col-md-3 mt-md-4">
+                        <img src="img/logo.png" alt="" class="img-fluid" style="width: 7rem;">
+                        <ul class="nav-footer">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link"><span>Alamat :</span> Jln.
+                                    Samalewa,
+                                    Pangkajene, Pangkep, Sulawesi Selatan 90651</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link"><span>Telp
+                                        :</span> +62 21 54313933</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="angkutapps.artechgroup@gmail.com" class="footer-link"><span>Email
+                                        :</span> angkutapps@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="produk">
+                            <h3>Produk</h3>
+                            <ul class="nav-footer">
+                                <li class="footer-item">
+                                    <a href="" class="footer-link">Driver Help Center</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-link">Investor Relation Platform</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-link">Career</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-link">Research and Development</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-link">Pusat Media</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-link">Peraturan dan Kebijakan Privasi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="link-download">
+                            <h3>Download Sekarang</h3>
+                            <picture>
+                                <a href="" class="d-block mb-3"><img src="img/playstore.png"
+                                        alt="https://www.hiclipart.com/free-transparent-background-png-clipart-balrw/download"
+                                        style="width: 15rem; height: 4rem;" /></a>
+                                <a href=""><img src="img/app-store-apple.png"
+                                        alt="https://favpng.com/png_view/apple-itunes-app-store-apple-logo-png/sWVYUMFj"
+                                        style="width: 15rem; height: 4.3rem;" /></a>
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="follow-us">
+                            <h3>Follow Us</h3>
+                            <a href="">
+                                <img src="img/Group 529.png" alt="" style="width: 3rem;">
+                            </a>
+                            <a href="">
+                                <img src="img/Group 530.png" alt="" style="width: 3rem;">
+                            </a>
+                            <a href="">
+                                <img src="img/Group 531.png" alt="" style="width: 3rem;">
+                            </a>
+                            <a href="">
+                                <img src="img/Group 532.png" alt="" style="width: 3rem;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <hr>
+                <p class="copyrigth text-center">copyrigth 2020 <span>angkut apps</span> - all rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3,
+                    loop: false
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

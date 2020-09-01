@@ -126,13 +126,21 @@ section.hero {
 }
 
 /* main */
-.main h2 {
+.main h1 {
   font-weight: 600;
   margin-bottom: 3rem;
 }
 
 .main h3 {
   line-height: 0.8;
+}
+
+.main img {
+  margin-bottom: 3rem;
+}
+
+.main .isi {
+  position: relative;
 }
 
 .main span {
@@ -144,16 +152,15 @@ section.hero {
   text-align: center;
   border-radius: 1rem;
   line-height: 2.5rem;
-}
-
-.main .keterangan {
-  margin-top: 8rem;
+  position: absolute;
+  top: 20%;
 }
 
 .main p {
   font-size: 1.3rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.7);
+  margin-left: 4rem;
 }
 
 /* info */
@@ -592,7 +599,6 @@ section.hero {
 
   .main .keterangan {
     margin-left: 4rem;
-    margin-top: 11rem;
   }
 
   .main span {
@@ -602,11 +608,15 @@ section.hero {
     height: 3.4rem;
     border-radius: 12%;
     line-height: 3.4rem;
+    font-size: 1.4rem;
+    top: 10%;
   }
 
   .main p {
+    margin-top: 2rem;
     font-size: 1.4rem;
     font-weight: 400;
+    margin-left: 5rem;
   }
 
   .info h1 {
@@ -720,21 +730,24 @@ section.hero {
 
   .main .keterangan {
     margin-left: 4rem;
-    margin-top: 11rem;
   }
 
   .main span {
     background: var(--green);
     color: white;
-    width: 9%;
-    height: 3.4rem;
-    border-radius: 12%;
-    line-height: 3.4rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: .5rem;
+    line-height: 3rem;
+    font-size: 1.3rem;
+    top: .5rem;
   }
 
   .main p {
     font-size: 1.4rem;
     font-weight: 400;
+    margin-top: 2.5rem;
+    margin-left: 4.4rem;
   }
 
   .info h1 {
