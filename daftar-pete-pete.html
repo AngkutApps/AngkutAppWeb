@@ -46,7 +46,7 @@
                         <a class="nav-link" href="post.html">Berita & Artikel</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             Daftar<i class="fas fa-angle-down"></i>
                         </a>
@@ -105,110 +105,6 @@
         </div>
     </div>
 
-    <section class="cara-daftar">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="daftar-panel">
-                        <h2>Cara Daftar Offline</h2>
-                        <ul>
-                            <li>
-                                <span>1</span>
-                                <p>Siapkan KTP dan foto kendaraan anda.</p>
-                            </li>
-                            <li>
-                                <span>2</span>
-                                <p>Datangi kantor setempat.</p>
-                            </li>
-                            <li>
-                                <span>3</span>
-                                <p>Tanyakan ke CS ingin mendaftar driver.</p>
-                            </li>
-                            <li>
-                                <span>4</span>
-                                <p>Isi data berdasarkan form yang diberikan.</p>
-                            </li>
-                            <li>
-                                <span>5</span>
-                                <p>Ikuti setiap instruksi dan training singkat.</p>
-                            </li>
-                            <li>
-                                <span>6</span>
-                                <p>Sudah selesai, akun akan langsung aktif.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="daftar-panel">
-                        <h2>Cara Daftar Online (WEB)</h2>
-                        <ul>
-                            <li>
-                                <span>1</span>
-                                <p>Siapkan KTP dan file foto kendaraan anda.</p>
-                            </li>
-                            <li>
-                                <span>2</span>
-                                <p>Masuk ke menu Daftar.</p>
-                            </li>
-                            <li>
-                                <span>3</span>
-                                <p>Isi identitas anda pada form pengisian.</p>
-                            </li>
-                            <li>
-                                <span>4</span>
-                                <p>Tekan video call now jika identitas anda sudah benar.</p>
-                            </li>
-                            <li>
-                                <span>5</span>
-                                <p>Tunggu hingga pihak Angkut Apps melakukan video call konfirmasi.</p>
-                            </li>
-                            <li>
-                                <span>6</span>
-                                <p>Ikuti instruksi hingga selesai.</p>
-                            </li>
-                            <li>
-                                <span>7</span>
-                                <p>Sudah selesai, akun akan langsung aktif.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="daftar-panel">
-                        <h2>Cara Daftar Online (Aplikasi)</h2>
-                        <ul>
-                            <li>
-                                <span>1</span>
-                                <p>Siapkan KTP dan file foto kendaraan anda.</p>
-                            </li>
-                            <li>
-                                <span>2</span>
-                                <p>Pada menu login klik tulisan Register.</p>
-                            </li>
-                            <li>
-                                <span>3</span>
-                                <p>Isi identitas anda sesuai dengan form.</p>
-                            </li>
-                            <li>
-                                <span>4</span>
-                                <p>Tunggu hingga pihak Angkut Apps melakukan video call conference.</p>
-                            </li>
-                            <li>
-                                <span>5</span>
-                                <p>Ikuti instruksi hingga selesai.</p>
-                            </li>
-                            <li>
-                                <span>6</span>
-                                <p>Sudah selesai, akun akan langsung aktif.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="daftar">
         <div class="container">
             <div class="row">
@@ -221,19 +117,42 @@
                         <p>Daftarkan diri kamu dan nikmati fitur yang tersedia</p>
                         <form action="" method="post">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap"
-                                    autocomplete="off" required /><input type="text" class="form-control" name="kota"
-                                    placeholder="Kab / Kota Domisili" autocomplete="off" required />
-                                <input type="telp" class="form-control" name="hp" placeholder="Nomor Hp"
-                                    autocomplete="off" required />
-                                <input type="email" class="form-control" name="email" placeholder="Email"
-                                    autocomplete="off" required />
-                                <input type="password" class="form-control" name="pass" placeholder="Password"
-                                    autocomplete="off" required />
-                                <input type="pass" class="form-control" name="konfirm pass"
-                                    placeholder="Konfirmasi Password" autocomplete="off" required />
+
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap"
+                                            autocomplete="off" required />
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" name="kota"
+                                            placeholder="Kab / Kota Domisili" autocomplete="off" required />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="email" class="form-control" name="email" placeholder="Email"
+                                            autocomplete="off" required />
+                                    </div>
+                                    <div class="col">
+                                        <input type="tel" class="form-control" name="hp" placeholder="Nomor Hp"
+                                            autocomplete="off" required />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="password" class="form-control" name="pass" placeholder="Password"
+                                            autocomplete="off" required />
+                                    </div>
+                                    <div class="col">
+                                        <input type="pass" class="form-control" name="konfirm pass"
+                                            placeholder="Konfirmasi Password" autocomplete="off" required />
+                                    </div>
+                                </div>
                                 <input type="text" class="form-control" name="nik" placeholder="NIK KTP"
                                     autocomplete="off" required />
+
                                 <label for="">Identitas Kendaraan</label>
                                 <div class="row">
                                     <div class="col">

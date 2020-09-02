@@ -46,7 +46,7 @@
                         <a class="nav-link" href="post.html">Berita & Artikel</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             Daftar<i class="fas fa-angle-down"></i>
                         </a>
@@ -117,19 +117,42 @@
                         <p>Daftarkan diri kamu dan nikmati fitur yang tersedia</p>
                         <form action="" method="post">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap"
-                                    autocomplete="off" required /><input type="text" class="form-control" name="kota"
-                                    placeholder="Kab / Kota Domisili" autocomplete="off" required />
-                                <input type="telp" class="form-control" name="hp" placeholder="Nomor Hp"
-                                    autocomplete="off" required />
-                                <input type="email" class="form-control" name="email" placeholder="Email"
-                                    autocomplete="off" required />
-                                <input type="password" class="form-control" name="pass" placeholder="Password"
-                                    autocomplete="off" required />
-                                <input type="pass" class="form-control" name="konfirm pass"
-                                    placeholder="Konfirmasi Password" autocomplete="off" required />
+
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap"
+                                            autocomplete="off" required />
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" name="kota"
+                                            placeholder="Kab / Kota Domisili" autocomplete="off" required />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="email" class="form-control" name="email" placeholder="Email"
+                                            autocomplete="off" required />
+                                    </div>
+                                    <div class="col">
+                                        <input type="tel" class="form-control" name="hp" placeholder="Nomor Hp"
+                                            autocomplete="off" required />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="password" class="form-control" name="pass" placeholder="Password"
+                                            autocomplete="off" required />
+                                    </div>
+                                    <div class="col">
+                                        <input type="pass" class="form-control" name="konfirm pass"
+                                            placeholder="Konfirmasi Password" autocomplete="off" required />
+                                    </div>
+                                </div>
                                 <input type="text" class="form-control" name="nik" placeholder="NIK KTP"
                                     autocomplete="off" required />
+
                                 <label for="">Identitas Kendaraan</label>
                                 <div class="row">
                                     <div class="col">
