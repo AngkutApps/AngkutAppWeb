@@ -214,6 +214,7 @@ button.navbar-toggler {
 
 .wrapper .card .card-body {
     overflow-y: hidden;
+    width: 100%;
 }
 
 .wrapper .card .card-body p {
