@@ -160,70 +160,90 @@ button.navbar-toggler {
 }
 
 /* main */
-main .card-wrapper {
-    margin-top: -2rem;
-    margin-bottom: 2rem;
+
+.wrapper .card-wrapper {
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 1.5rem 1.5rem 0 0;
 }
 
-main .card-wrapper img {
-    width: 100%;
-    border-radius: 1.2rem 1.2rem 0 0;
+.wrapper .card-wrapper img {
+    border-radius: .7rem .7rem 0 0;
 }
 
-main .card-wrapper a {
-    font-size: 1.2rem;
-    text-decoration: none;
+.wrapper .card-wrapper .card-link {
+    font-size: 2rem;
     color: rgba(0, 0, 0, .7);
-    font-weight: 700;
+    font-weight: 600;
 }
 
-
-main .card {
-    border: unset;
+.wrapper .card-wrapper .card-footer {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 2rem;
+    justify-content: flex-end;
 }
 
-main .card img {
-    width: 50%;
-    border-radius: .5rem;
-}
-
-.card .card-body a {
-    font-size: 1rem;
-    text-decoration: none;
-    position: absolute;
-    left: 50%;
-    top: 1rem;
-    color: rgba(0, 0, 0, .7);
-    font-weight: 500;
-}
-
-.card .card-footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    top: 0;
-}
-
-.card .text-muted {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: .8rem;
-}
-
-.card-wrapper .card-footer {
-    border-top: unset;
-    text-align: right;
-}
-
-.card-wrapper .text-muted {
+.wrapper .card-wrapper .card-footer .text-muted {
     font-size: 1.1rem;
 }
 
+
+.wrapper .card-wrapper .card-link:hover {
+    color: rgba(0, 0, 0, .9);
+}
+
+.wrapper .card-wrapper .card-text {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, .7);
+    font-weight: 600;
+}
+
+.wrapper .card {
+    display: flex;
+    flex-direction: row;
+    height: 12rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.wrapper .card .card-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: unset;
+    border: unset;
+}
+
+.wrapper .card .card-body {
+    overflow-y: hidden;
+}
+
+.wrapper .card .card-body p {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, .7);
+    font-weight: 600;
+}
+
+.wrapper .card .card-body .card-link {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, .7);
+    font-weight: 600;
+}
+
+.wrapper .card .card-body .card-link:hover {
+    color: rgba(0, 0, 0, .9);
+}
+
+.wrapper .card a {
+    width: 30rem;
+}
+
+.wrapper .card img {
+    height: 100%;
+}
+
+
+
+
+/* pagination */
 .pagination {
     padding-top: 5rem;
 }
@@ -313,51 +333,6 @@ main .card img {
     color: var(--green);
 }
 
-@media (min-width: 320px) and (max-width: 450px) {
-    .jumbotron.jumbotron-fluid {
-        margin-top: 20%;
-    }
-
-    .kategori .link-kategori {
-        font-size: 1.1rem;
-    }
-
-    .form-group {
-        width: 30rem;
-    }
-
-    .form-group .form-input {
-        padding: 6px;
-        font-size: 1.2rem;
-        border-radius: 5px;
-        padding-left: 1rem;
-    }
-
-    .search-btn .fa-search {
-        font-size: 18px;
-        margin-top: 5px;
-    }
-
-    /* main */
-    main .card-wrapper a {
-        font-size: 1.5rem;
-    }
-
-    main .card {
-        margin-bottom: 5rem;
-    }
-
-    .card .card-body a {
-        font-size: 1.1rem;
-        top: 15px;
-    }
-
-    /* footer */
-    .card .text-muted {
-        font-size: 1rem;
-    }
-}
-
 @media (min-width: 576px) and (max-width: 767.98px) {
     .jumbotron.jumbotron-fluid {
         margin-top: 12%;
@@ -393,26 +368,11 @@ main .card img {
     }
 
     /* main */
-    main .card-wrapper a {
-        font-size: 1.5rem;
-    }
 
-
-    .card .card-body a {
-        font-size: 1.5rem;
-        top: 3rem;
-    }
-
-    .card .text-muted {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        font-size: 1rem;
-    }
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     .navbar-brand {
         width: 70px;
     }
@@ -465,25 +425,33 @@ main .card img {
 
 
     /*  main    */
-    .wrapper {
+    .wrapper .card {
+        display: flex;
+        flex-direction: column;
+        height: 22rem;
+
         margin-top: 5rem;
+        position: relative;
     }
 
-    main .card-wrapper a {
-        font-size: 1.7rem;
+    .wrapper .card a {
+        width: 100%;
+        height: 10rem;
     }
 
-    .card-wrapper .text-muted {
-        font-size: 1.4rem;
+    .wrapper .card .card-footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: #f1f1f1;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: flex;
+        justify-content: flex-end;
     }
 
-    .card .card-body a {
-        font-size: 1.4rem;
-        top: 2rem;
-    }
-
-    .card .text-muted {
-        font-size: 1.2rem;
+    .wrapper .card .card-footer .text-muted {
+        font-size: .9rem;
     }
 
     /* footer */
@@ -537,32 +505,68 @@ main .card img {
 
 
     /* main */
-    main.wrapper {
-        padding-bottom: 8rem;
+
+    .wrapper .card-wrapper img {
+        height: 30rem;
     }
 
-    main .card {
-        display: unset;
+    .wrapper .card-wrapper .card-link {
+        font-size: 3rem;
     }
 
-    main .card img {
-        width: 100%;
-        border-radius: 1.2rem 1.2rem 0 0;
-    }
-
-    .card .card-body a {
+    .wrapper .card-wrapper .card-footer .text-muted {
         font-size: 1.5rem;
-        text-decoration: none;
-        position: unset;
     }
 
-    .card .card-footer {
-        position: unset;
+    .wrapper .card-wrapper .card-body {
+        margin-bottom: 15rem;
     }
 
-    .card .text-muted {
-        position: unset;
-        font-size: 1.2rem;
+    .wrapper .card-wrapper .card-text {
+        font-size: 2rem;
+    }
+
+    .wrapper .card {
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+        width: 23rem;
+        margin-top: 0;
+        margin-bottom: 1.9rem;
+        position: relative;
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+    .wrapper .card a {
+        width: 100%;
+        height: 45%;
+    }
+
+    .wrapper .card a>img {
+        border-radius: .7rem .7rem 0 0;
+    }
+
+    .wrapper .card .card-body .card-link {
+        font-size: 1.8rem;
+    }
+
+    .wrapper .card .card-body p {
+        font-size: 1.5rem;
+    }
+
+    .wrapper .card .card-footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: #f1f1f1;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .wrapper .card .card-footer .text-muted {
+        font-size: 1.1rem;
     }
 
     /* footer */
@@ -636,33 +640,70 @@ main .card img {
 
 
     /* main */
-    main.wrapper {
-        padding-bottom: 8rem;
+
+    .wrapper .card-wrapper img {
+        height: 30rem;
     }
 
-    main .card {
-        display: unset;
+    .wrapper .card-wrapper .card-link {
+        font-size: 3rem;
     }
 
-    main .card img {
-        width: 100%;
-        border-radius: 1.2rem 1.2rem 0 0;
-    }
-
-    .card .card-body a {
+    .wrapper .card-wrapper .card-footer .text-muted {
         font-size: 1.5rem;
-        text-decoration: none;
-        position: unset;
     }
 
-    .card .card-footer {
-        position: unset;
+    .wrapper .card-wrapper .card-body {
+        margin-bottom: 15rem;
     }
 
-    .card .text-muted {
-        position: unset;
-        font-size: 1.2rem;
+    .wrapper .card-wrapper .card-text {
+        font-size: 2rem;
     }
+
+    .wrapper .card {
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+        width: 25rem;
+        margin-top: 0;
+        margin-bottom: 1.9rem;
+        position: relative;
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+    .wrapper .card a {
+        width: 100%;
+        height: 45%;
+    }
+
+    .wrapper .card a>img {
+        border-radius: .7rem .7rem 0 0;
+    }
+
+    .wrapper .card .card-body .card-link {
+        font-size: 1.8rem;
+    }
+
+    .wrapper .card .card-body p {
+        font-size: 1.5rem;
+    }
+
+    .wrapper .card .card-footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: #f1f1f1;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .wrapper .card .card-footer .text-muted {
+        font-size: 1.1rem;
+    }
+
 
     /* footer */
     .footer-top .footer-item:hover {
