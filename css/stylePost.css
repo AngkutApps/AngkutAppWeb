@@ -721,3 +721,23 @@ button.navbar-toggler {
         font-size: 1.3rem;
     }
 }
+
+/* detail post */
+
+.detail {
+    margin-top: 5%;
+}
+
+.detailSearch .form-group {
+    background-color: #f0f0f0;
+}
+
+.detail .list-unstyled li>a {
+    font-size: 1.2rem;
+    color: var(--green);
+}
+
+.detail .btn.btn-success {
+    font-size: 1.3rem;
+    padding: .5rem 2rem;
+}
