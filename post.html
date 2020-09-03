@@ -1,311 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css" />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="css/all.css" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/stylePost.css" />
 
-  <!-- My CSS -->
-  <link rel="stylesheet" href="css/stylePost.css" />
+    <title>Post</title>
+  </head>
 
-  <title>Post</title>
-</head>
-
-<body>
-  <!-- Awal Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow p-2 mb-5 bg-white">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="img/logo.png" alt="" />
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav m-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">Tentang Kami</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="layanan.html">Layanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="post.html">Berita & Artikel</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              Daftar<i class="fas fa-angle-down"></i>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="daftar-pete-pete.html">Mobil Pete-pete</a>
-              <a class="dropdown-item" href="daftar-mobil-travel.html">Mobil Daerah / Travel</a>
-              <a class="dropdown-item" href="daftar-bus.html">Mobil Bus</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pusat-bantuan.html">Pusat Bantuan</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Akhir Navbar -->
-
-  <!-- header -->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="text-heading text-center">Berita & Artikel</h1>
-          <hr>
-          <p class="text-center text-p">Yuk baca berita dan artikel terkait pengalaman<br>para penumpang dan driver
-            Angkut Apps
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <form class="form-inline justify-content-center">
-            <div class="form-group">
-              <input class="form-input" type="cari" placeholder="Cari berita disini . . ." aria-label="cari" />
-              <button type="submit" class="search-btn">
-                <i class="fas fa-search"></i>
-              </button>
-            </div>
-            <select class="group-kategori" name="" id="">
-              <option selected>Semua Kategori</option>
-              <option value="">Community</option>
-              <option value="">Driver</option>
-              <option value="">Event</option>
-              <option value="">Technology</option>
-              <option value="">Article</option>
-              <option value="">Passenger</option>
-            </select>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- main -->
-  <main class="wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-6">
-          <div class="card-wrapper">
-            <a href="#">
-              <img src="img/img1.jpg" alt="" />
-            </a>
-            <div class="card-body">
-              <a class="card-link" href="postDetail.html" target="_blank">
-                Judul Artikel
+  <body>
+    <!-- Awal Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top shadow p-2 mb-5 bg-white"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layanan.html">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="post.html">Berita & Artikel</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Daftar<i class="fas fa-angle-down"></i>
               </a>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, magnam?</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-6">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="card">
-                <a href="#">
-                  <img src="img/img1.jpg" alt="" />
-                </a>
-                <div class="card-body">
-                  <a class="card-link" href="#">Card Title</a>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="daftar-pete-pete.html"
+                  >Mobil Pete-pete</a
+                >
+                <a class="dropdown-item" href="daftar-mobil-travel.html"
+                  >Mobil Daerah / Travel</a
+                >
+                <a class="dropdown-item" href="daftar-bus.html">Mobil Bus</a>
               </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="card">
-                <a href="#">
-                  <img src="img/Tim/iccank.png" alt="...">
-                </a>
-                <div class="card-body">
-                  <a class="card-link" href="#">Card title</a>
-                  <p class="card-text">Some quick .</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="card">
-                <a href="#">
-                  <img src="img/img1.jpg" alt="" />
-                </a>
-                <div class="card-body">
-                  <a class="card-link" href="#">Card Title</a>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="card">
-                <a href="#">
-                  <img src="img/Tim/iccank.png" alt="...">
-                </a>
-                <div class="card-body">
-                  <a class="card-link" href="#">Mengapa Saya sangat Tampan</a>
-                  <p class="card-text"></p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pusat-bantuan.html">Pusat Bantuan</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+    <!-- Akhir Navbar -->
 
-      <div class="row">
-        <div class="col-12">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-end">
-              <li class="page-item">
-                <a class="page-link prev" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link next" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+    <!-- header -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-heading text-center">Berita & Artikel</h1>
+            <hr />
+            <p class="text-center text-p">
+              Yuk baca berita dan artikel terkait pengalaman<br />para penumpang
+              dan driver Angkut Apps
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <form class="form-inline justify-content-center">
+              <div class="form-group">
+                <input
+                  class="form-input"
+                  type="cari"
+                  placeholder="Cari berita disini . . ."
+                  aria-label="cari"
+                />
+                <button type="submit" class="search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+              <select class="group-kategori" name="" id="">
+                <option selected>Semua Kategori</option>
+                <option value="">Community</option>
+                <option value="">Driver</option>
+                <option value="">Event</option>
+                <option value="">Technology</option>
+                <option value="">Article</option>
+                <option value="">Passenger</option>
+              </select>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
+    <!-- main -->
+    <main class="wrapper">
+      <div class="container">
         <div class="row">
-          <div class="col-12 col-md-3 mt-md-4">
-            <img src="img/logo.png" alt="" class="img-fluid" style="width: 7rem;">
-            <ul class="nav-footer">
-              <li class="footer-item">
-                <a href="#" class="footer-link"><span>Alamat :</span> Jln.
-                  Samalewa,
-                  Pangkajene, Pangkep, Sulawesi Selatan 90651</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-link"><span>Telp
-                    :</span> +62 21 54313933</a>
-              </li>
-              <li class="footer-item">
-                <a href="angkutapps.artechgroup@gmail.com" class="footer-link"><span>Email
-                    :</span> angkutapps@gmail.com</a>
-              </li>
-            </ul>
+          <div class="col-12 col-lg-6">
+            <div class="card-wrapper">
+              <a href="#">
+                <img src="img/img1.jpg" alt="" />
+              </a>
+              <div class="card-body">
+                <a class="card-link" href="postDetail.html" target="_blank">
+                  Judul Artikel
+                </a>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                  magnam?
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
           </div>
-          <div class="col-12 col-md-3">
-            <div class="produk">
-              <h3>Produk</h3>
+          <div class="col-12 col-lg-6">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="card">
+                  <a href="#">
+                    <img src="img/img1.jpg" alt="" />
+                  </a>
+                  <div class="card-body">
+                    <a class="card-link" href="#">Card Title</a>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card">
+                  <a href="#">
+                    <img src="img/Tim/asep.png" alt="..." />
+                  </a>
+                  <div class="card-body">
+                    <a class="card-link" href="#">Card title</a>
+                    <p class="card-text">Some quick .</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="card">
+                  <a href="#">
+                    <img src="img/img1.jpg" alt="" />
+                  </a>
+                  <div class="card-body">
+                    <a class="card-link" href="#">Card Title</a>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card">
+                  <a href="#">
+                    <img src="img/Tim/asep.png" alt="..." />
+                  </a>
+                  <div class="card-body">
+                    <a class="card-link" href="#"
+                      >Mengapa saya Tampan dan menawan</a
+                    >
+                    <p class="card-text"></p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-end">
+                <li class="page-item">
+                  <a class="page-link prev" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link next" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="row">
+            <div class="col-12 col-md-3 mt-md-4">
+              <img
+                src="img/logo.png"
+                alt=""
+                class="img-fluid"
+                style="width: 7rem"
+              />
               <ul class="nav-footer">
                 <li class="footer-item">
-                  <a href="" class="footer-link">Driver Help Center</a>
+                  <a href="#" class="footer-link"
+                    ><span>Alamat :</span> Jln. Samalewa, Pangkajene, Pangkep,
+                    Sulawesi Selatan 90651</a
+                  >
                 </li>
                 <li class="footer-item">
-                  <a href="" class="footer-link">Investor Relation Platform</a>
+                  <a href="#" class="footer-link"
+                    ><span>Telp :</span> +62 21 54313933</a
+                  >
                 </li>
                 <li class="footer-item">
-                  <a href="" class="footer-link">Career</a>
-                </li>
-                <li class="footer-item">
-                  <a href="" class="footer-link">Research and Development</a>
-                </li>
-                <li class="footer-item">
-                  <a href="" class="footer-link">Pusat Media</a>
-                </li>
-                <li class="footer-item">
-                  <a href="" class="footer-link">Peraturan dan Kebijakan Privasi</a>
+                  <a href="angkutapps.artechgroup@gmail.com" class="footer-link"
+                    ><span>Email :</span> angkutapps@gmail.com</a
+                  >
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="col-12 col-md-3">
-            <div class="link-download">
-              <h3>Download Sekarang</h3>
-              <picture>
-                <a href="" class="d-block mb-3"><img src="img/playstore.png"
-                    alt="https://www.hiclipart.com/free-transparent-background-png-clipart-balrw/download"
-                    style="width: 15rem; height: 4rem;" /></a>
-                <a href=""><img src="img/app-store-apple.png"
-                    alt="https://favpng.com/png_view/apple-itunes-app-store-apple-logo-png/sWVYUMFj"
-                    style="width: 15rem; height: 4.3rem;" /></a>
-              </picture>
+            <div class="col-12 col-md-3">
+              <div class="produk">
+                <h3>Produk</h3>
+                <ul class="nav-footer">
+                  <li class="footer-item">
+                    <a href="" class="footer-link">Driver Help Center</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link"
+                      >Investor Relation Platform</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">Career</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">Research and Development</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">Pusat Media</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link"
+                      >Peraturan dan Kebijakan Privasi</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-md-3">
-            <div class="follow-us">
-              <h3>Follow Us</h3>
-              <a href="https://www.facebook.com/angkut.apps" target="_blank">
-                <img src="img/Group 529.png" alt="" style="width: 3rem;">
-              </a>
-              <a href="https://twitter.com/AngkutI" target="_blank">
-                <img src="img/Group 530.png" alt="" style="width: 3rem;">
-              </a>
-              <a href="https://www.linkedin.com/in/angkut-apps-7a11a71ab/" target="_blank">
-                <img src="img/Group 531.png" alt="" style="width: 3rem;">
-              </a>
-              <a href="https://www.instagram.com/angkutapps/" target="_blank">
-                <img src="img/Group 532.png" alt="" style="width: 3rem;">
-              </a>
+            <div class="col-12 col-md-3">
+              <div class="link-download">
+                <h3>Download Sekarang</h3>
+                <picture>
+                  <a href="" class="d-block mb-3"
+                    ><img
+                      src="img/playstore.png"
+                      alt="https://www.hiclipart.com/free-transparent-background-png-clipart-balrw/download"
+                      style="width: 15rem; height: 4rem"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="img/app-store-apple.png"
+                      alt="https://favpng.com/png_view/apple-itunes-app-store-apple-logo-png/sWVYUMFj"
+                      style="width: 15rem; height: 4.3rem"
+                  /></a>
+                </picture>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="follow-us">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/angkut.apps" target="_blank">
+                  <img src="img/Group 529.png" alt="" style="width: 3rem" />
+                </a>
+                <a href="https://twitter.com/AngkutI" target="_blank">
+                  <img src="img/Group 530.png" alt="" style="width: 3rem" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/angkut-apps-7a11a71ab/"
+                  target="_blank"
+                >
+                  <img src="img/Group 531.png" alt="" style="width: 3rem" />
+                </a>
+                <a href="https://www.instagram.com/angkutapps/" target="_blank">
+                  <img src="img/Group 532.png" alt="" style="width: 3rem" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
+        <div class="footer-bottom">
+          <hr />
+          <p class="copyrigth text-center">
+            copyrigth 2020 <span>angkut apps</span> - all rights reserved
+          </p>
+        </div>
       </div>
-      <div class="footer-bottom">
-        <hr>
-        <p class="copyrigth text-center">copyrigth 2020 <span>angkut apps</span> - all rights reserved</p>
-      </div>
-    </div>
-  </footer>
-  <!-- Akhir Footer -->
+    </footer>
+    <!-- Akhir Footer -->
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
