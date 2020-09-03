@@ -1,430 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
+    <!-- owl carousel -->
+    <link
+      rel="stylesheet"
+      href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
 
-  <!-- owl carousel -->
-  <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css" />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="css/all.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/styleabout.css" />
 
-  <!-- style css -->
-  <link rel="stylesheet" href="css/styleabout.css" />
+    <title>Tentang Kami</title>
+  </head>
 
-  <title>Tentang Kami</title>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow p-2 mb-5 bg-white">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="img/logo.png" alt="" />
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav m-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="about.html">Tentang Kami</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="layanan.html">Layanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="post.html">Berita & Artikel</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              Daftar<i class="fas fa-angle-down"></i>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="daftar-pete-pete.html">Mobil Pete-pete</a>
-              <a class="dropdown-item" href="daftar-mobil-travel.html">Mobil Daerah / Travel</a>
-              <a class="dropdown-item" href="daftar-bus.html">Mobil Bus</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pusat-bantuan.html">Pusat Bantuan</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="hero">
-    <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <div class="column-text">
-            <h1 class="display-4">Angkut App</h1>
-            <h2>Aplikasi Pemesanan <span>Transportasi</span> Lintas Daerah Secara
-              <span>Cepat,
-                Mudah</span> dan <span>Aman</span>
-            </h2>
-            <a href="#" class="btn-contact">Contact Us</a>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="column-img-illustration">
-            <img src="img/Group 621.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="main">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <h3>Apa Yang</h3>
-          <h1>Kami Kerjakan</h1>
-          <picture>
-            <img src="img/business_conference_.svg" alt="" class="img-fluid" />
-          </picture>
-        </div>
-        <div class="col-12 col-md-6 d-flex align-items-center">
-          <div class="keterangan">
-            <div class="isi">
-              <span>1</span>
-              <p>
-                Membantu mitra kami (transportasi lintas daerah) untuk menemukan penumpang secara cepat
-                dan
-                aman
-              </p>
-            </div>
-            <div class="isi">
-              <span>2</span>
-              <p>
-                Memberikan layanan terbaik yang disukai oleh penumpang berupa merchant dan snack.
-              </p>
-            </div>
-            <div class="isi">
-              <span>3</span>
-              <p>
-                Memperbaharui dan mempermudah alur pemesanan jasa transportasi lintas daerah.
-              </p>
-            </div>
-            <div class="isi">
-              <span>4</span>
-              <p>
-                Membantu penumpang untuk menemukan driver yang terpercaya dengan layanan transportasi
-                yang aman dan nyaman serta fleksibel.
-              </p>
-            </div>
-          </div>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top shadow p-2 mb-5 bg-white"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layanan.html">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="post.html">Berita & Artikel</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Daftar<i class="fas fa-angle-down"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="daftar-pete-pete.html"
+                  >Mobil Pete-pete</a
+                >
+                <a class="dropdown-item" href="daftar-mobil-travel.html"
+                  >Mobil Daerah / Travel</a
+                >
+                <a class="dropdown-item" href="daftar-bus.html">Mobil Bus</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pusat-bantuan.html">Pusat Bantuan</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <section class="info">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-6">
-          <h1>Perjalanan Angkut Apps</h1>
-          <hr />
-          <p>
-            Angkut Apps terinisiatif dari sebuah hasil pengamatan satu keluarga yang menunggu di pinggir jalan dan hasil
-            telponan teman yang meminta nomor telepon supir daerah. Yang pada akhirnya menjadi pertanyaan bagi
-            sekelompok sahabat yang ambisius dan haus akan pengalaman baru. Dari hasil ambisius itu, sekelompok sahabat
-            membuat komitmen untuk ide ini dapat dijadikan sebagai perusahaan startup yang dapat digunakan dan juga
-            membantu para penggunanya untuk bepergian lintas daerah yaitu driver dan penumpang transportasi lintas
-            daerah menggunakan mobil penumpang daerah, pete-pete, dan bus. Hingga saat ini kami sangat optimis dan
-            ambisius ide kami dibutuhkan oleh banyak orang serta akan terus melakukan pengembangan dan mengevaluasi demi
-            kenyamanan pengguna.
-          </p>
-        </div>
-        <div class="col-12 col-lg-4 offset-md-1 d-flex align-items-center justify-content-center">
-          <picture>
-            <img src="img/world_wide_web_monochromatic.svg" alt="" class="img-fluid ilustrasi-img" />
-          </picture>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="kelebihan">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1>Kelebihan Kami</h1>
-          <hr />
-        </div>
-      </div>
-      <div class="row info-panel">
-        <div class="col-6 col-lg-4">
-          <div class="pertama shadow p-3 mb-5 bg-white rounded">
-            <p>
-              Di kondisi ini, kami memberikan layanan antar jemput penumpang dengan mengedepankan protocol Kesehatan
-              <span class="badge badge-secondary">1</span>
-            </p>
-          </div>
-        </div>
-        <div class="col-6 col-lg-4">
-          <div class="kedua shadow p-3 mb-5 bg-white rounded">
-            <p>
-              Mengedepankan keamanan pengguna baik data pribadi maupun ketika terjadi aktivitas jasa transportasi lintas
-              daerah.
-              <span class="badge badge-secondary">2</span>
-            </p>
-          </div>
-        </div>
-        <div class="col-6 col-lg-4">
-          <div class="ketiga shadow p-3 mb-5 bg-white rounded">
-            <p>
-              Meningkatkan pertumbuhan ekonomi bagi mitra kami dengan terus mengekspansi layanan kepada penumpang.
-              <span class="badge badge-secondary">3</span>
-            </p>
-          </div>
-        </div>
-        <div class="col-6 col-lg-4">
-          <div class="keempat shadow p-3 mb-5 bg-white rounded">
-            <p>
-              Layanan yang simple dengan memprioritaskan kemudahan dan kenyamanan berinteraksi dengan pengguna.
-              <span class="badge badge-secondary">4</span>
-            </p>
-          </div>
-        </div>
-        <div class="col-6 col-lg-4">
-          <div class="kelima shadow p-3 mb-5 bg-white rounded">
-            <p>
-              Senantiasa memberikan platform yang mudah untuk digunakan dengan mempertimbangkan pengguna gaptek.
-              <span class="badge badge-secondary">5</span>
-            </p>
-          </div>
-        </div>
-        <div class="col-6 col-lg-4">
-          <div class="keenam shadow p-3 mb-5 bg-white rounded">
-            <p>
-              Melakukan aktivitas jasa transportasi sesuai dengan keinginanmu tanpa takut akun terkena punishment atau
-              sanksi.
-              <span class="badge badge-secondary">6</span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="tim">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Tim Kami</h1>
-          <hr />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 text-center">
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="our-tim">
-                <img src="img/Tim/irwan.png" alt="">
-              </div>
-              <div class="info-tim">
-                <h4>Irwan Ardiansyah</h4>
-                <p>Android Developer</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="our-tim">
-                <img src="img/Tim/rehan.png" alt="">
-              </div>
-              <div class="info-tim">
-                <h4>Andi Raihan</h4>
-                <p>Android Developer</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="our-tim">
-                <img src="img/Tim/ayu.png" alt="">
-              </div>
-              <div class="info-tim">
-                <h4>Ayu</h4>
-                <p>Android Developer</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="our-tim">
-                <img src="img/Tim/furqan.png" alt="">
-              </div>
-              <div class="info-tim">
-                <h4>Furqan</h4>
-                <p>Android Developer</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="our-tim">
-                <img src="img/Tim/taufik.png" alt="">
-              </div>
-              <div class="info-tim">
-                <h4>Taufik</h4>
-                <p>Android Developer</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="our-tim">
-                <img src="img/Tim/iccank.png" alt="">
-              </div>
-              <div class="info-tim">
-                <h4>Ichsan B</h4>
-                <p>Android Developer</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="our-tim">
-                <img src="img/Tim/asep.png" alt="">
-              </div>
-              <div class="info-tim">
-                <h4>Asep</h4>
-                <p>Android Developer</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
+    <section class="hero">
+      <div class="container">
         <div class="row">
-          <div class="col-12 col-md-3 mt-md-4">
-            <img src="img/logo.png" alt="" class="img-fluid" style="width: 7rem;">
-            <ul class="nav-footer">
-              <li class="footer-item">
-                <a href="#" class="footer-link"><span>Alamat :</span> Jln.
-                  Samalewa,
-                  Pangkajene, Pangkep, Sulawesi Selatan 90651</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-link"><span>Telp
-                    :</span> +62 21 54313933</a>
-              </li>
-              <li class="footer-item">
-                <a href="angkutapps.artechgroup@gmail.com" class="footer-link"><span>Email
-                    :</span> angkutapps@gmail.com</a>
-              </li>
-            </ul>
+          <div class="col-6">
+            <div class="column-text">
+              <h1 class="display-4">Angkut App</h1>
+              <h2>
+                Aplikasi Pemesanan <span>Transportasi</span> Lintas Daerah
+                Secara <span>Cepat, Mudah</span> dan <span>Aman</span>
+              </h2>
+              <a href="#" class="btn-contact">Contact Us</a>
+            </div>
           </div>
-          <div class="col-12 col-md-3">
-            <div class="produk">
-              <h3>Produk</h3>
+          <div class="col-6">
+            <div class="column-img-illustration">
+              <img src="img/Group 621.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h3>Apa Yang</h3>
+            <h1>Kami Kerjakan</h1>
+            <picture>
+              <img
+                src="img/business_conference_.svg"
+                alt=""
+                class="img-fluid"
+              />
+            </picture>
+          </div>
+          <div class="col-12 col-md-6 d-flex align-items-center">
+            <div class="keterangan">
+              <div class="isi">
+                <span>1</span>
+                <p>
+                  Membantu mitra kami (transportasi lintas daerah) untuk
+                  menemukan penumpang secara cepat dan aman
+                </p>
+              </div>
+              <div class="isi">
+                <span>2</span>
+                <p>
+                  Memberikan layanan terbaik yang disukai oleh penumpang berupa
+                  merchant dan snack.
+                </p>
+              </div>
+              <div class="isi">
+                <span>3</span>
+                <p>
+                  Memperbaharui dan mempermudah alur pemesanan jasa transportasi
+                  lintas daerah.
+                </p>
+              </div>
+              <div class="isi">
+                <span>4</span>
+                <p>
+                  Membantu penumpang untuk menemukan driver yang terpercaya
+                  dengan layanan transportasi yang aman dan nyaman serta
+                  fleksibel.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h1>Perjalanan Angkut Apps</h1>
+            <hr />
+            <p>
+              Angkut Apps terinisiatif dari sebuah hasil pengamatan satu
+              keluarga yang menunggu di pinggir jalan dan hasil telponan teman
+              yang meminta nomor telepon supir daerah. Yang pada akhirnya
+              menjadi pertanyaan bagi sekelompok sahabat yang ambisius dan haus
+              akan pengalaman baru. Dari hasil ambisius itu, sekelompok sahabat
+              membuat komitmen untuk ide ini dapat dijadikan sebagai perusahaan
+              startup yang dapat digunakan dan juga membantu para penggunanya
+              untuk bepergian lintas daerah yaitu driver dan penumpang
+              transportasi lintas daerah menggunakan mobil penumpang daerah,
+              pete-pete, dan bus. Hingga saat ini kami sangat optimis dan
+              ambisius ide kami dibutuhkan oleh banyak orang serta akan terus
+              melakukan pengembangan dan mengevaluasi demi kenyamanan pengguna.
+            </p>
+          </div>
+          <div
+            class="col-12 col-lg-4 offset-md-1 d-flex align-items-center justify-content-center"
+          >
+            <picture>
+              <img
+                src="img/world_wide_web_monochromatic.svg"
+                alt=""
+                class="img-fluid ilustrasi-img"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="kelebihan">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Kelebihan Kami</h1>
+            <hr />
+          </div>
+        </div>
+        <div class="row info-panel">
+          <div class="col-6 col-lg-4">
+            <div class="pertama shadow p-3 mb-5 bg-white rounded">
+              <p>
+                Di kondisi ini, kami memberikan layanan antar jemput penumpang
+                dengan mengedepankan protocol Kesehatan
+                <span class="badge badge-secondary">1</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="kedua shadow p-3 mb-5 bg-white rounded">
+              <p>
+                Mengedepankan keamanan pengguna baik data pribadi maupun ketika
+                terjadi aktivitas jasa transportasi lintas daerah.
+                <span class="badge badge-secondary">2</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="ketiga shadow p-3 mb-5 bg-white rounded">
+              <p>
+                Meningkatkan pertumbuhan ekonomi bagi mitra kami dengan terus
+                mengekspansi layanan kepada penumpang.
+                <span class="badge badge-secondary">3</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="keempat shadow p-3 mb-5 bg-white rounded">
+              <p>
+                Layanan yang simple dengan memprioritaskan kemudahan dan
+                kenyamanan berinteraksi dengan pengguna.
+                <span class="badge badge-secondary">4</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="kelima shadow p-3 mb-5 bg-white rounded">
+              <p>
+                Senantiasa memberikan platform yang mudah untuk digunakan dengan
+                mempertimbangkan pengguna gaptek.
+                <span class="badge badge-secondary">5</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="keenam shadow p-3 mb-5 bg-white rounded">
+              <p>
+                Melakukan aktivitas jasa transportasi sesuai dengan keinginanmu
+                tanpa takut akun terkena punishment atau sanksi.
+                <span class="badge badge-secondary">6</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tim">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Tim Kami</h1>
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="our-tim">
+                  <img src="img/Tim/irwan.png" alt="" />
+                </div>
+                <div class="info-tim">
+                  <h4>Irwan Ardiansyah</h4>
+                  <p>Android Developer</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="our-tim">
+                  <img src="img/Tim/rehan.png" alt="" />
+                </div>
+                <div class="info-tim">
+                  <h4>Andi Raihan</h4>
+                  <p>Android Developer</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="our-tim">
+                  <img src="img/Tim/ayu.png" alt="" />
+                </div>
+                <div class="info-tim">
+                  <h4>Ayu</h4>
+                  <p>Android Developer</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="our-tim">
+                  <img src="img/Tim/furqan.png" alt="" />
+                </div>
+                <div class="info-tim">
+                  <h4>Furqan</h4>
+                  <p>Android Developer</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="our-tim">
+                  <img src="img/Tim/taufik.png" alt="" />
+                </div>
+                <div class="info-tim">
+                  <h4>Taufik</h4>
+                  <p>Android Developer</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="our-tim">
+                  <img src="img/Tim/iccank.png" alt="" />
+                </div>
+                <div class="info-tim">
+                  <h4>Ichsan B</h4>
+                  <p>Android Developer</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="our-tim">
+                  <img src="img/Tim/asep.png" alt="" />
+                </div>
+                <div class="info-tim">
+                  <h4>Asep</h4>
+                  <p>Android Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="row">
+            <div class="col-12 col-md-3 mt-md-4">
+              <img
+                src="img/logo.png"
+                alt=""
+                class="img-fluid"
+                style="width: 7rem"
+              />
               <ul class="nav-footer">
                 <li class="footer-item">
-                  <a href="" class="footer-link">Driver Help Center</a>
+                  <a href="#" class="footer-link"
+                    ><span>Alamat :</span> Jln. Samalewa, Pangkajene, Pangkep,
+                    Sulawesi Selatan 90651</a
+                  >
                 </li>
                 <li class="footer-item">
-                  <a href="" class="footer-link">Investor Relation Platform</a>
+                  <a href="#" class="footer-link"
+                    ><span>Telp :</span> +62 21 54313933</a
+                  >
                 </li>
                 <li class="footer-item">
-                  <a href="" class="footer-link">Career</a>
-                </li>
-                <li class="footer-item">
-                  <a href="" class="footer-link">Research and Development</a>
-                </li>
-                <li class="footer-item">
-                  <a href="" class="footer-link">Pusat Media</a>
-                </li>
-                <li class="footer-item">
-                  <a href="" class="footer-link">Peraturan dan Kebijakan Privasi</a>
+                  <a href="angkutapps.artechgroup@gmail.com" class="footer-link"
+                    ><span>Email :</span> angkutapps@gmail.com</a
+                  >
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="col-12 col-md-3">
-            <div class="link-download">
-              <h3>Download Sekarang</h3>
-              <picture>
-                <a href="" class="d-block mb-3"><img src="img/playstore.png"
-                    alt="https://www.hiclipart.com/free-transparent-background-png-clipart-balrw/download"
-                    style="width: 15rem; height: 4rem;" /></a>
-                <a href=""><img src="img/app-store-apple.png"
-                    alt="https://favpng.com/png_view/apple-itunes-app-store-apple-logo-png/sWVYUMFj"
-                    style="width: 15rem; height: 4.3rem;" /></a>
-              </picture>
+            <div class="col-12 col-md-3">
+              <div class="produk">
+                <h3>Produk</h3>
+                <ul class="nav-footer">
+                  <li class="footer-item">
+                    <a href="" class="footer-link">Driver Help Center</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link"
+                      >Investor Relation Platform</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">Career</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">Research and Development</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">Pusat Media</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link"
+                      >Peraturan dan Kebijakan Privasi</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-md-3">
-            <div class="follow-us">
-              <h3>Follow Us</h3>
-              <a href="https://www.facebook.com/angkut.apps" target="_blank">
-                <img src="img/Group 529.png" alt="" style="width: 3rem;">
-              </a>
-              <a href="https://twitter.com/AngkutI" target="_blank">
-                <img src="img/Group 530.png" alt="" style="width: 3rem;">
-              </a>
-              <a href="https://www.linkedin.com/in/angkut-apps-7a11a71ab/" target="_blank">
-                <img src="img/Group 531.png" alt="" style="width: 3rem;">
-              </a>
-              <a href="https://www.instagram.com/angkutapps/" target="_blank">
-                <img src="img/Group 532.png" alt="" style="width: 3rem;">
-              </a>
+            <div class="col-12 col-md-3">
+              <div class="link-download">
+                <h3>Download Sekarang</h3>
+                <picture>
+                  <a href="" class="d-block mb-3"
+                    ><img
+                      src="img/playstore.png"
+                      alt="https://www.hiclipart.com/free-transparent-background-png-clipart-balrw/download"
+                      style="width: 15rem; height: 4rem"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="img/app-store-apple.png"
+                      alt="https://favpng.com/png_view/apple-itunes-app-store-apple-logo-png/sWVYUMFj"
+                      style="width: 15rem; height: 4.3rem"
+                  /></a>
+                </picture>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="follow-us">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/angkut.apps" target="_blank">
+                  <img src="img/Group 529.png" alt="" style="width: 3rem" />
+                </a>
+                <a href="https://twitter.com/AngkutI" target="_blank">
+                  <img src="img/Group 530.png" alt="" style="width: 3rem" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/angkut-apps-7a11a71ab/"
+                  target="_blank"
+                >
+                  <img src="img/Group 531.png" alt="" style="width: 3rem" />
+                </a>
+                <a href="https://www.instagram.com/angkutapps/" target="_blank">
+                  <img src="img/Group 532.png" alt="" style="width: 3rem" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
+        <div class="footer-bottom">
+          <hr />
+          <p class="copyrigth text-center">
+            copyrigth 2020 <span>angkut apps</span> - all rights reserved
+          </p>
+        </div>
       </div>
-      <div class="footer-bottom">
-        <hr>
-        <p class="copyrigth text-center">copyrigth 2020 <span>angkut apps</span> - all rights reserved</p>
-      </div>
-    </div>
-  </footer>
-  <!--Akhir Footer -->
+    </footer>
+    <!--Akhir Footer -->
 
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-  <script>
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: false,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      responsive: {
-        0: {
-          items: 1
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+          1200: {
+            items: 4,
+          },
         },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 3
-        },
-        1200: {
-          items: 4
-        }
-      }
-    })
-  </script>
-</body>
-
+      });
+    </script>
+  </body>
 </html>
